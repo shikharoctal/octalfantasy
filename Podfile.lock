@@ -222,7 +222,6 @@ PODS:
   - SwiftyAttributes (5.1.1)
   - SwiftyJSON (4.3.0)
   - Toast-Swift (5.0.1)
-  - "UITextView+Placeholder (1.4.0)"
 
 DEPENDENCIES:
   - Alamofire (~> 5.3)
@@ -251,7 +250,6 @@ DEPENDENCIES:
   - SwiftyAttributes
   - SwiftyJSON (~> 4.0)
   - Toast-Swift
-  - "UITextView+Placeholder"
 
 SPEC REPOS:
   trunk:
@@ -295,7 +293,6 @@ SPEC REPOS:
     - SwiftyAttributes
     - SwiftyJSON
     - Toast-Swift
-    - "UITextView+Placeholder"
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
@@ -338,8 +335,7 @@ SPEC CHECKSUMS:
   SwiftyAttributes: e3e13891ddac3c62b3d7798d5c3969cea88e62bb
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
-  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: 1efe0710af1dab3af9be27e8eaa4e9d9e054b6d6
+PODFILE CHECKSUM: 2cc6563b24c07859db0d9b9c3aec46b2191d8aaf
 
 COCOAPODS: 1.15.2

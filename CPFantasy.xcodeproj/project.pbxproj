@@ -1395,7 +1395,6 @@
 			isa = PBXGroup;
 			children = (
 				8D1D802A2BA17B6E009DC5B4 /* IndiaFantasy.entitlements */,
-				8D14869D2B8F00730021E996 /* ViewController.swift */,
 				8DEB0BBC2CCB9DA100CB202A /* Classes */,
 				8D1489AC2B8F00740021E996 /* Info.plist */,
 			);
@@ -2606,6 +2605,7 @@
 		8DEB0BBC2CCB9DA100CB202A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8D14869D2B8F00730021E996 /* ViewController.swift */,
 				8D14869E2B8F00730021E996 /* AppManager */,
 				8D1486A12B8F00730021E996 /* ApiClient */,
 				8D1486A52B8F00730021E996 /* Resources */,

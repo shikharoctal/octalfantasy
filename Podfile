@@ -6,7 +6,7 @@ target 'CPFantasy' do
   use_frameworks!
   pod 'Toast-Swift'
   pod 'IQKeyboardManagerSwift'
-  pod 'UITextView+Placeholder'
+  # pod 'UITextView+Placeholder'
   pod 'NVActivityIndicatorView/Extended'
   pod 'SDWebImage'
   pod 'Firebase/Analytics'
