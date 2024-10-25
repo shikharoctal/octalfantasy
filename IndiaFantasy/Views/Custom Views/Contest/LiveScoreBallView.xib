@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveScoreBallView" customModule="Ultrafair" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="K14-Oe-nL3"/>
+                <outlet property="lblBat1" destination="XT9-pH-Hol" id="KZ0-zA-KU6"/>
+                <outlet property="lblBat2" destination="uOF-ob-g0Y" id="gHc-d5-t0U"/>
+                <outlet property="lblBowlerScore" destination="pUv-kH-Ydt" id="Cz0-0T-tTW"/>
+                <outlet property="lblBowlwe" destination="bBk-O0-pPo" id="WJ3-Rg-hCg"/>
+                <outlet property="lblMinutes" destination="GGP-B7-UiJ" id="g0w-QP-wLj"/>
+                <outlet property="lblScore" destination="2f4-1d-Dif" id="LcP-Vq-6Ec"/>
+                <outlet property="lblTeam1" destination="EFe-cE-wAE" id="Xlw-VQ-oyM"/>
+                <outlet property="lblTeam2" destination="cTG-dP-JcV" id="kal-gQ-8Wk"/>
+                <outlet property="scrlViewIndicator" destination="gum-LH-YCE" id="qTA-Vi-bOW"/>
+                <outlet property="viewFootball" destination="kjB-e0-2nG" id="6Rf-Dn-k3P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XT9-pH-Hol" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                    <rect key="frame" x="20" y="13" width="190" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="ZhS-eM-YrT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOF-ob-g0Y" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                    <rect key="frame" x="20" y="36" width="190" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="UV3-eR-nmf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gum-LH-YCE">
+                    <rect key="frame" x="220" y="32" width="184" height="27"/>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBk-O0-pPo" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                    <rect key="frame" x="220" y="13" width="100" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="CEp-qw-V6X"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUv-kH-Ydt" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                    <rect key="frame" x="330" y="13" width="64" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="7eO-bl-aAe"/>
+                        <constraint firstAttribute="width" constant="64" id="Fyn-4X-646"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjB-e0-2nG">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJN-pF-7DP" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="20" y="13" width="0.0" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="JIc-xa-tEe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Score"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGP-B7-UiJ" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="394" y="13" width="0.0" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="KmE-r5-Kex"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFe-cE-wAE" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="20" y="36" width="0.0" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="R7a-ez-hwq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTG-dP-JcV" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="394" y="36" width="0.0" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="yiI-dE-MYh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="105" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2f4-1d-Dif" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="207" y="36" width="0.0" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="aWj-ml-zEQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="cTG-dP-JcV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2f4-1d-Dif" secondAttribute="trailing" constant="8" id="50t-99-DGG"/>
+                        <constraint firstItem="PJN-pF-7DP" firstAttribute="leading" secondItem="kjB-e0-2nG" secondAttribute="leading" constant="20" id="8EC-uf-MoN"/>
+                        <constraint firstItem="2f4-1d-Dif" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EFe-cE-wAE" secondAttribute="trailing" constant="8" id="BIl-OB-17v"/>
+                        <constraint firstItem="2f4-1d-Dif" firstAttribute="centerX" secondItem="kjB-e0-2nG" secondAttribute="centerX" id="ErU-aC-C46"/>
+                        <constraint firstAttribute="trailing" secondItem="cTG-dP-JcV" secondAttribute="trailing" constant="20" id="Nun-OI-Xfz"/>
+                        <constraint firstItem="GGP-B7-UiJ" firstAttribute="centerY" secondItem="PJN-pF-7DP" secondAttribute="centerY" id="Of0-DF-rNP"/>
+                        <constraint firstItem="EFe-cE-wAE" firstAttribute="top" secondItem="PJN-pF-7DP" secondAttribute="bottom" constant="8" symbolic="YES" id="SeS-H9-wlS"/>
+                        <constraint firstItem="GGP-B7-UiJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PJN-pF-7DP" secondAttribute="trailing" constant="10" id="amK-af-an8"/>
+                        <constraint firstAttribute="trailing" secondItem="GGP-B7-UiJ" secondAttribute="trailing" constant="20" id="ky9-ap-Uay"/>
+                        <constraint firstItem="EFe-cE-wAE" firstAttribute="leading" secondItem="PJN-pF-7DP" secondAttribute="leading" id="lLC-Tu-atf"/>
+                        <constraint firstItem="2f4-1d-Dif" firstAttribute="top" secondItem="PJN-pF-7DP" secondAttribute="bottom" constant="8" symbolic="YES" id="rBk-W0-v7j"/>
+                        <constraint firstItem="PJN-pF-7DP" firstAttribute="top" secondItem="kjB-e0-2nG" secondAttribute="top" constant="13" id="xna-4K-Tcm"/>
+                        <constraint firstItem="cTG-dP-JcV" firstAttribute="top" secondItem="PJN-pF-7DP" secondAttribute="bottom" constant="8" symbolic="YES" id="zFS-R7-Mtf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.70454396633122929" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gum-LH-YCE" secondAttribute="trailing" constant="10" id="3vC-s0-cpL"/>
+                <constraint firstItem="kjB-e0-2nG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="65C-O3-CVL"/>
+                <constraint firstItem="gum-LH-YCE" firstAttribute="top" secondItem="bBk-O0-pPo" secondAttribute="bottom" constant="5" id="7Lk-Ml-WG8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kjB-e0-2nG" secondAttribute="trailing" id="9ee-Nh-X12"/>
+                <constraint firstItem="XT9-pH-Hol" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="FoT-af-ldk"/>
+                <constraint firstAttribute="trailing" secondItem="pUv-kH-Ydt" secondAttribute="trailing" constant="20" id="Nuf-64-yCM"/>
+                <constraint firstItem="bBk-O0-pPo" firstAttribute="leading" secondItem="uOF-ob-g0Y" secondAttribute="trailing" constant="10" id="V1i-B5-MRR"/>
+                <constraint firstItem="kjB-e0-2nG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Xv6-Uh-iLu"/>
+                <constraint firstItem="uOF-ob-g0Y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Y4d-lc-iLB"/>
+                <constraint firstItem="bBk-O0-pPo" firstAttribute="leading" secondItem="XT9-pH-Hol" secondAttribute="trailing" constant="10" id="cQ6-z3-koU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gum-LH-YCE" secondAttribute="bottom" constant="5" id="crk-FQ-g1J"/>
+                <constraint firstItem="pUv-kH-Ydt" firstAttribute="leading" secondItem="bBk-O0-pPo" secondAttribute="trailing" constant="10" id="hLP-A6-eo4"/>
+                <constraint firstAttribute="bottom" secondItem="kjB-e0-2nG" secondAttribute="bottom" id="hx7-bV-X68"/>
+                <constraint firstItem="bBk-O0-pPo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="if4-cj-j3Y"/>
+                <constraint firstItem="gum-LH-YCE" firstAttribute="leading" secondItem="uOF-ob-g0Y" secondAttribute="trailing" constant="10" id="kx8-Sn-5T3"/>
+                <constraint firstItem="pUv-kH-Ydt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="uRm-1w-MrM"/>
+                <constraint firstItem="XT9-pH-Hol" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="xQI-xo-MPH"/>
+                <constraint firstItem="uOF-ob-g0Y" firstAttribute="top" secondItem="XT9-pH-Hol" secondAttribute="bottom" constant="8" symbolic="YES" id="yRI-5t-KlF"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="-87.723214285714278"/>
+        </view>
+    </objects>
+</document>

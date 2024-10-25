@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Medium.ttf">
+            <string>Gilroy-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OctalDropDown" customModule="IndiaFantasy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="253" height="259"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kLy-S9-N6e">
+                    <rect key="frame" x="0.0" y="0.0" width="253" height="177"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="vJK-wz-Siz"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="8xL-L1-yOc"/>
+                    </connections>
+                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GGi-Hc-uYm">
+                    <rect key="frame" x="20" y="187" width="213" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQm-G9-jyu" customClass="OctalButton" customModule="IndiaFantasy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="101.5" height="30"/>
+                            <color key="backgroundColor" red="0.94756704568862915" green="0.52520883123496565" blue="0.1872750830935131" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="12"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Clear">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qQ-h1-Wfm" customClass="OctalButton" customModule="IndiaFantasy" customModuleProvider="target">
+                            <rect key="frame" x="111.5" y="0.0" width="101.5" height="30"/>
+                            <color key="backgroundColor" name="0E4990_Blue"/>
+                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="12"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Apply">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="p5o-0g-zpq"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.87450980392156863" green="0.92549019607843142" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GGi-Hc-uYm" secondAttribute="trailing" constant="20" id="FOM-d0-96Z"/>
+                <constraint firstItem="kLy-S9-N6e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OBt-on-BEx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="GGi-Hc-uYm" secondAttribute="bottom" constant="8" id="UqN-B9-I46"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kLy-S9-N6e" secondAttribute="trailing" id="YG5-4g-zWN"/>
+                <constraint firstItem="kLy-S9-N6e" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dBM-PX-9JJ"/>
+                <constraint firstItem="GGi-Hc-uYm" firstAttribute="top" secondItem="kLy-S9-N6e" secondAttribute="bottom" constant="10" id="eYz-Nf-ELK"/>
+                <constraint firstItem="GGi-Hc-uYm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="rA7-cn-OGo"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" red="0.87450980392156863" green="0.92549019607843142" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="btnApply" destination="0qQ-h1-Wfm" id="15y-vd-mbK"/>
+                <outlet property="btnClear" destination="RQm-G9-jyu" id="cbd-d0-0wD"/>
+                <outlet property="tblDropDown" destination="kLy-S9-N6e" id="dac-Sb-stj"/>
+            </connections>
+            <point key="canvasLocation" x="210.86956521739131" y="-61.272321428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="0E4990_Blue">
+            <color red="0.054901960784313725" green="0.28627450980392155" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

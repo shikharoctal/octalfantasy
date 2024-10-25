@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilterHeaderView" id="U6b-Vx-4bR" customClass="FilterHeaderView" customModule="Ultrafair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ExZ-sz-R4a">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WD2-sl-ArM" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="20" y="0.0" width="280" height="50"/>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="WD2-sl-ArM" secondAttribute="bottom" id="3PT-a4-xMZ"/>
+                        <constraint firstItem="WD2-sl-ArM" firstAttribute="leading" secondItem="ExZ-sz-R4a" secondAttribute="leading" constant="20" id="F6X-mO-mib"/>
+                        <constraint firstAttribute="trailing" secondItem="WD2-sl-ArM" secondAttribute="trailing" constant="20" id="VuZ-4B-cB1"/>
+                        <constraint firstItem="WD2-sl-ArM" firstAttribute="top" secondItem="ExZ-sz-R4a" secondAttribute="top" id="n9z-CE-l2T"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ExZ-sz-R4a" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="8g1-Ep-Gy1"/>
+                <constraint firstItem="ExZ-sz-R4a" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="Fzv-48-9tT"/>
+                <constraint firstItem="ExZ-sz-R4a" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="Vza-XA-Xlw"/>
+                <constraint firstItem="ExZ-sz-R4a" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="a6s-hn-99r"/>
+            </constraints>
+            <connections>
+                <outlet property="lblTitle" destination="WD2-sl-ArM" id="j9O-Ok-lNl"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="111.83035714285714"/>
+        </collectionReusableView>
+    </objects>
+</document>

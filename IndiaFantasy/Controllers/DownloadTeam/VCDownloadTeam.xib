@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Medium.ttf">
+            <string>Gilroy-Medium</string>
+        </array>
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCDownloadTeam" customModule="IndiaFantasy" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewRoundCorners" destination="H7h-WY-fk9" id="hIY-Ch-chH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQQ-31-cqd">
+                    <rect key="frame" x="0.0" y="4" width="414" height="892"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7h-WY-fk9">
+                    <rect key="frame" x="0.0" y="669" width="414" height="227"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Download Teams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eT7-3p-QgF">
+                            <rect key="frame" x="135.5" y="20" width="143.5" height="21.5"/>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="18"/>
+                            <color key="textColor" red="0.9098039269" green="0.53333336109999996" blue="0.35686278339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXv-bh-0X8">
+                            <rect key="frame" x="355" y="10" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="tj6-Dv-NBf"/>
+                                <constraint firstAttribute="width" constant="44" id="x0c-XD-dVM"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="closeTint"/>
+                            <connections>
+                                <action selector="btnDismiss:" destination="-1" eventType="touchUpInside" id="qeA-Pk-hwy"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MI1-iC-PjG">
+                            <rect key="frame" x="0.0" y="50" width="414" height="113"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aFU-wl-3rr">
+                                    <rect key="frame" x="15" y="20" width="384" height="93"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pd8-qc-Huj">
+                                            <rect key="frame" x="0.0" y="0.0" width="384" height="46.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winning Teams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OU5-1S-Xac">
+                                                    <rect key="frame" x="10" y="14" width="111.5" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgA-36-twP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="46.5"/>
+                                                    <color key="tintColor" name="A4A4A4_Gray"/>
+                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="IconDownload"/>
+                                                    <connections>
+                                                        <action selector="btnDownloadTeams:" destination="-1" eventType="touchUpInside" id="33R-Iy-P2d"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="rgA-36-twP" secondAttribute="bottom" id="PXb-kO-8tF"/>
+                                                <constraint firstItem="OU5-1S-Xac" firstAttribute="centerY" secondItem="pd8-qc-Huj" secondAttribute="centerY" id="UrF-m9-CRn"/>
+                                                <constraint firstItem="rgA-36-twP" firstAttribute="leading" secondItem="pd8-qc-Huj" secondAttribute="leading" id="WSW-fZ-bC4"/>
+                                                <constraint firstAttribute="trailing" secondItem="rgA-36-twP" secondAttribute="trailing" id="X8A-Oy-at9"/>
+                                                <constraint firstItem="OU5-1S-Xac" firstAttribute="leading" secondItem="pd8-qc-Huj" secondAttribute="leading" constant="10" id="nS9-4K-EGR"/>
+                                                <constraint firstItem="rgA-36-twP" firstAttribute="centerY" secondItem="pd8-qc-Huj" secondAttribute="centerY" id="rde-Pf-xdW"/>
+                                                <constraint firstItem="rgA-36-twP" firstAttribute="top" secondItem="pd8-qc-Huj" secondAttribute="top" id="uh6-n9-hN1"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JhX-hN-lVL">
+                                            <rect key="frame" x="0.0" y="46.5" width="384" height="46.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Teams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2j-Pi-iOL">
+                                                    <rect key="frame" x="10" y="14" width="69" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04r-OC-pNt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="46.5"/>
+                                                    <color key="tintColor" name="A4A4A4_Gray"/>
+                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="IconDownload"/>
+                                                    <connections>
+                                                        <action selector="btnDownloadTeams:" destination="-1" eventType="touchUpInside" id="Z24-EV-tD2"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="04r-OC-pNt" secondAttribute="trailing" id="2yj-sC-BNe"/>
+                                                <constraint firstItem="R2j-Pi-iOL" firstAttribute="centerY" secondItem="JhX-hN-lVL" secondAttribute="centerY" id="7hs-ar-O1X"/>
+                                                <constraint firstAttribute="bottom" secondItem="04r-OC-pNt" secondAttribute="bottom" id="CmN-ic-yFo"/>
+                                                <constraint firstItem="04r-OC-pNt" firstAttribute="leading" secondItem="JhX-hN-lVL" secondAttribute="leading" id="I41-fv-aV2"/>
+                                                <constraint firstItem="04r-OC-pNt" firstAttribute="centerY" secondItem="JhX-hN-lVL" secondAttribute="centerY" id="Ozx-M8-dFB"/>
+                                                <constraint firstItem="R2j-Pi-iOL" firstAttribute="leading" secondItem="JhX-hN-lVL" secondAttribute="leading" constant="10" id="SED-t4-O1J"/>
+                                                <constraint firstItem="04r-OC-pNt" firstAttribute="top" secondItem="JhX-hN-lVL" secondAttribute="top" id="xmw-ci-HZS"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="aFU-wl-3rr" firstAttribute="leading" secondItem="MI1-iC-PjG" secondAttribute="leading" constant="15" id="61u-Gc-vCL"/>
+                                <constraint firstItem="aFU-wl-3rr" firstAttribute="top" secondItem="MI1-iC-PjG" secondAttribute="top" constant="20" id="RBN-A6-o2S"/>
+                                <constraint firstAttribute="trailing" secondItem="aFU-wl-3rr" secondAttribute="trailing" constant="15" id="Slv-dV-Zjv"/>
+                                <constraint firstAttribute="bottom" secondItem="aFU-wl-3rr" secondAttribute="bottom" id="d12-OG-kK1"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="MI1-iC-PjG" firstAttribute="leading" secondItem="H7h-WY-fk9" secondAttribute="leading" id="02O-Fx-caw"/>
+                        <constraint firstAttribute="bottom" secondItem="MI1-iC-PjG" secondAttribute="bottom" constant="64" id="0T3-ho-ujs"/>
+                        <constraint firstItem="eT7-3p-QgF" firstAttribute="top" secondItem="H7h-WY-fk9" secondAttribute="top" constant="20" id="9rb-1e-cpN"/>
+                        <constraint firstItem="MI1-iC-PjG" firstAttribute="top" secondItem="RXv-bh-0X8" secondAttribute="bottom" constant="-4" id="A0y-z9-klm"/>
+                        <constraint firstItem="RXv-bh-0X8" firstAttribute="top" secondItem="H7h-WY-fk9" secondAttribute="top" constant="10" id="Eor-1w-IBv"/>
+                        <constraint firstItem="eT7-3p-QgF" firstAttribute="centerX" secondItem="H7h-WY-fk9" secondAttribute="centerX" id="axj-4p-EHf"/>
+                        <constraint firstAttribute="trailing" secondItem="RXv-bh-0X8" secondAttribute="trailing" constant="15" id="bIt-g5-MtW"/>
+                        <constraint firstAttribute="trailing" secondItem="MI1-iC-PjG" secondAttribute="trailing" id="m9i-3g-bF1"/>
+                        <constraint firstItem="eT7-3p-QgF" firstAttribute="leading" secondItem="H7h-WY-fk9" secondAttribute="leading" constant="10" id="n77-gc-Sna"/>
+                        <constraint firstItem="RXv-bh-0X8" firstAttribute="leading" secondItem="MI1-iC-PjG" secondAttribute="trailing" id="pEJ-fj-eIf"/>
+                        <constraint firstAttribute="height" constant="227" id="tPd-6K-2rR"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="n77-gc-Sna"/>
+                            <exclude reference="pEJ-fj-eIf"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H7h-WY-fk9" secondAttribute="trailing" id="6fp-T6-e2u"/>
+                <constraint firstItem="BQQ-31-cqd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Nln-TW-z5h"/>
+                <constraint firstItem="H7h-WY-fk9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SP1-Ju-3yy"/>
+                <constraint firstAttribute="bottom" secondItem="BQQ-31-cqd" secondAttribute="bottom" id="UKE-fl-Kg8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="H7h-WY-fk9" secondAttribute="bottom" constant="-34" id="VyL-7y-3xC"/>
+                <constraint firstItem="BQQ-31-cqd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-44" id="ilr-LI-nrP"/>
+                <constraint firstItem="BQQ-31-cqd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kBL-XB-zYI"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="124.55357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IconDownload" width="21" height="21"/>
+        <image name="closeTint" width="20" height="20"/>
+        <namedColor name="A4A4A4_Gray">
+            <color red="0.64313725490196083" green="0.64313725490196083" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Medium.ttf">
+            <string>Gilroy-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LeaderBoardHeaderView" customModule="IndiaFantasy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="482" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AfJ-lp-fs4">
+                    <rect key="frame" x="10" y="10" width="462" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Teams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAO-ml-Azh" customClass="OctalLabel" customModule="IndiaFantasy" customModuleProvider="target">
+                            <rect key="frame" x="8" y="-2" width="160" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="pBG-dl-Hq2"/>
+                                <constraint firstAttribute="width" constant="160" id="wu7-lo-0Io"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="12"/>
+                            <color key="textColor" red="0.96705454589999995" green="0.70203471179999999" blue="0.1649923623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Rank" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teX-hR-fki" customClass="OctalLabel" customModule="IndiaFantasy" customModuleProvider="target">
+                            <rect key="frame" x="414" y="-2" width="40" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Jjr-er-iv9"/>
+                                <constraint firstAttribute="width" constant="40" id="RMp-oW-Mxi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="12"/>
+                            <color key="textColor" red="0.96705454589999995" green="0.70203471179999999" blue="0.1649923623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3L-Jw-lar" customClass="OctalLabel" customModule="IndiaFantasy" customModuleProvider="target">
+                            <rect key="frame" x="308" y="-2" width="56" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="56" id="jA7-x8-5b9"/>
+                                <constraint firstAttribute="height" constant="24" id="y1f-Eh-Y4j"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="12"/>
+                            <color key="textColor" red="0.96705454589999995" green="0.70203471179999999" blue="0.1649923623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="teX-hR-fki" firstAttribute="leading" secondItem="g3L-Jw-lar" secondAttribute="trailing" constant="50" id="3Ci-xN-ut4"/>
+                        <constraint firstItem="teX-hR-fki" firstAttribute="centerY" secondItem="AfJ-lp-fs4" secondAttribute="centerY" id="O3v-j8-Ay4"/>
+                        <constraint firstItem="hAO-ml-Azh" firstAttribute="centerY" secondItem="AfJ-lp-fs4" secondAttribute="centerY" id="Z8z-SZ-Suq"/>
+                        <constraint firstAttribute="trailing" secondItem="teX-hR-fki" secondAttribute="trailing" constant="8" id="l3S-Pi-ouK"/>
+                        <constraint firstItem="g3L-Jw-lar" firstAttribute="centerY" secondItem="AfJ-lp-fs4" secondAttribute="centerY" id="soO-qW-Wzu"/>
+                        <constraint firstItem="hAO-ml-Azh" firstAttribute="leading" secondItem="AfJ-lp-fs4" secondAttribute="leading" constant="8" id="tbM-Mi-Paf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwf-wW-fV2">
+                    <rect key="frame" x="0.0" y="39" width="482" height="1"/>
+                    <color key="backgroundColor" red="0.33214420080000001" green="0.36637890340000001" blue="0.39315050839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BDA-Km-K8t"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="040F19_Black"/>
+            <constraints>
+                <constraint firstItem="AfJ-lp-fs4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="7Du-1X-OkN"/>
+                <constraint firstAttribute="trailing" secondItem="Pwf-wW-fV2" secondAttribute="trailing" id="QDv-EN-sMs"/>
+                <constraint firstAttribute="bottom" secondItem="Pwf-wW-fV2" secondAttribute="bottom" id="VbU-n3-MXS"/>
+                <constraint firstItem="Pwf-wW-fV2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bkY-z0-OrG"/>
+                <constraint firstAttribute="trailing" secondItem="AfJ-lp-fs4" secondAttribute="trailing" constant="10" id="n8s-f0-BEW"/>
+                <constraint firstAttribute="bottom" secondItem="AfJ-lp-fs4" secondAttribute="bottom" constant="10" id="otH-KL-BQJ"/>
+                <constraint firstItem="AfJ-lp-fs4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="rQl-hW-xBn"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblPoints" destination="g3L-Jw-lar" id="Lg6-uu-Y6F"/>
+                <outlet property="lblRank" destination="teX-hR-fki" id="dCJ-dZ-dzc"/>
+                <outlet property="lblTitle" destination="hAO-ml-Azh" id="xnx-sq-edt"/>
+            </connections>
+            <point key="canvasLocation" x="97.101449275362327" y="-165.40178571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="040F19_Black">
+            <color red="0.015686274509803921" green="0.058823529411764705" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

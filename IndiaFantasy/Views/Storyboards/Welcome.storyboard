@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold_0.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="jbo-J8-UnZ">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="j0a-4M-gXu" customClass="SplashViewController" customModule="IndiaFantasy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RbQ-tf-n6y">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-background-image" translatesAutoresizingMaskIntoConstraints="NO" id="8ze-ex-aVP">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-logo-final" translatesAutoresizingMaskIntoConstraints="NO" id="gPk-pX-lZ2">
+                                <rect key="frame" x="38.666666666666657" y="114" width="352.66666666666674" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gPk-pX-lZ2" secondAttribute="height" multiplier="277:157" id="H4i-Hl-63r"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="embasador" translatesAutoresizingMaskIntoConstraints="NO" id="uRB-QA-d04">
+                                <rect key="frame" x="29.666666666666657" y="349" width="370.66666666666674" height="688"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uRB-QA-d04" secondAttribute="height" multiplier="179:332" id="HSj-IJ-Op3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LZj-gb-hqd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8ze-ex-aVP" firstAttribute="top" secondItem="RbQ-tf-n6y" secondAttribute="top" id="54L-HU-SdF"/>
+                            <constraint firstItem="uRB-QA-d04" firstAttribute="centerX" secondItem="8ze-ex-aVP" secondAttribute="centerX" id="PtN-oP-XNi"/>
+                            <constraint firstItem="gPk-pX-lZ2" firstAttribute="centerX" secondItem="8ze-ex-aVP" secondAttribute="centerX" id="SMR-rE-VGp"/>
+                            <constraint firstItem="uRB-QA-d04" firstAttribute="top" secondItem="gPk-pX-lZ2" secondAttribute="bottom" constant="35" id="VIo-5P-SR7"/>
+                            <constraint firstItem="8ze-ex-aVP" firstAttribute="trailing" secondItem="RbQ-tf-n6y" secondAttribute="trailing" id="Ver-kM-Pg7"/>
+                            <constraint firstItem="8ze-ex-aVP" firstAttribute="leading" secondItem="RbQ-tf-n6y" secondAttribute="leading" id="dU6-Q8-ccS"/>
+                            <constraint firstAttribute="bottom" secondItem="8ze-ex-aVP" secondAttribute="bottom" id="gas-RQ-5GZ"/>
+                            <constraint firstItem="gPk-pX-lZ2" firstAttribute="top" secondItem="LZj-gb-hqd" secondAttribute="top" constant="55" id="zdr-0w-mUA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sC1-Fu-1gv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.093023255813954" y="24.463519313304722"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="Lki-fR-zaG">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" definesPresentationContext="YES" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="atu-aj-dZO" customClass="WelcomeViewController" customModule="IndiaFantasy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleAspectFit" id="o1X-ze-Yhg">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome-back" translatesAutoresizingMaskIntoConstraints="NO" id="TAH-da-4D4">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCZ-Cz-Tyh">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="898"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UwC-R0-Ja9">
+                                        <rect key="frame" x="20" y="172" width="390" height="567"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QS2-Ft-Pay">
+                                            <size key="itemSize" width="408" height="826"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="atu-aj-dZO" id="F0D-Jz-Lok"/>
+                                            <outlet property="delegate" destination="atu-aj-dZO" id="D6Q-za-xDn"/>
+                                        </connections>
+                                    </collectionView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="CRh-Ih-OVK" customClass="CustomPageControl" customModule="IndiaFantasy" customModuleProvider="target">
+                                        <rect key="frame" x="125" y="758" width="180" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="4c5-Or-eAo"/>
+                                            <constraint firstAttribute="height" constant="26" id="qfe-n9-04j"/>
+                                        </constraints>
+                                        <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="currentPageIndicatorTintColor" name="11FFBD_Green"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="currentPageImage" value="selected-page"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnCtrlValueChanged:" destination="atu-aj-dZO" eventType="valueChanged" id="fz0-wT-m8J"/>
+                                        </connections>
+                                    </pageControl>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLz-SY-hSw">
+                                        <rect key="frame" x="55" y="814" width="320" height="55"/>
+                                        <color key="backgroundColor" name="0E4990_Blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="APn-ta-xqh"/>
+                                            <constraint firstAttribute="height" constant="55" id="d4Z-lE-xp2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextButtonAction:" destination="atu-aj-dZO" eventType="touchUpInside" id="1pc-ml-la6"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c84-P9-gh5">
+                                        <rect key="frame" x="25" y="100" width="380" height="42.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="c84-P9-gh5" secondAttribute="height" multiplier="9:1" id="Tww-CH-QA6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65v-4d-qqP" customClass="OctalButton" customModule="IndiaFantasy" customModuleProvider="target">
+                                        <rect key="frame" x="343" y="59" width="67" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="67" id="NpO-48-atf"/>
+                                            <constraint firstAttribute="height" constant="31" id="P3j-fa-9Sc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Skip"/>
+                                        <connections>
+                                            <action selector="btnSkipPressed:" destination="atu-aj-dZO" eventType="touchUpInside" id="GAP-9D-7fH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rLz-SY-hSw" secondAttribute="bottom" constant="29" id="3p4-Vp-CsX"/>
+                                    <constraint firstItem="rLz-SY-hSw" firstAttribute="top" secondItem="CRh-Ih-OVK" secondAttribute="bottom" constant="30" id="4OH-yE-Wp3"/>
+                                    <constraint firstAttribute="trailing" secondItem="c84-P9-gh5" secondAttribute="trailing" constant="25" id="8YF-Sc-iI3"/>
+                                    <constraint firstItem="CRh-Ih-OVK" firstAttribute="top" secondItem="UwC-R0-Ja9" secondAttribute="bottom" constant="19" id="8tT-ie-kC8"/>
+                                    <constraint firstItem="rLz-SY-hSw" firstAttribute="centerX" secondItem="dCZ-Cz-Tyh" secondAttribute="centerX" id="9XB-zn-OUE"/>
+                                    <constraint firstItem="c84-P9-gh5" firstAttribute="centerX" secondItem="dCZ-Cz-Tyh" secondAttribute="centerX" id="Bgc-0d-L9y"/>
+                                    <constraint firstItem="UwC-R0-Ja9" firstAttribute="top" secondItem="c84-P9-gh5" secondAttribute="bottom" constant="29.620000000000001" id="ZbS-b9-OZg"/>
+                                    <constraint firstAttribute="trailing" secondItem="65v-4d-qqP" secondAttribute="trailing" constant="20" symbolic="YES" id="aqX-wn-gYW"/>
+                                    <constraint firstItem="UwC-R0-Ja9" firstAttribute="leading" secondItem="dCZ-Cz-Tyh" secondAttribute="leading" constant="20" symbolic="YES" id="hkz-IM-d0O"/>
+                                    <constraint firstAttribute="trailing" secondItem="UwC-R0-Ja9" secondAttribute="trailing" constant="20" symbolic="YES" id="jK3-o1-or7"/>
+                                    <constraint firstItem="c84-P9-gh5" firstAttribute="top" secondItem="65v-4d-qqP" secondAttribute="bottom" constant="10" id="kPS-NL-GPl"/>
+                                    <constraint firstAttribute="bottom" secondItem="rLz-SY-hSw" secondAttribute="bottom" constant="29" id="sRb-pF-v1e"/>
+                                    <constraint firstItem="c84-P9-gh5" firstAttribute="leading" secondItem="dCZ-Cz-Tyh" secondAttribute="leading" constant="25" id="tk6-ju-Roo"/>
+                                    <constraint firstItem="CRh-Ih-OVK" firstAttribute="centerX" secondItem="dCZ-Cz-Tyh" secondAttribute="centerX" id="yLc-4W-UkV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iX6-rA-tzF"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iX6-rA-tzF" firstAttribute="bottom" secondItem="dCZ-Cz-Tyh" secondAttribute="bottom" id="0fk-cj-4mk"/>
+                            <constraint firstItem="dCZ-Cz-Tyh" firstAttribute="top" secondItem="o1X-ze-Yhg" secondAttribute="top" id="6gL-SI-YC5"/>
+                            <constraint firstItem="dCZ-Cz-Tyh" firstAttribute="leading" secondItem="iX6-rA-tzF" secondAttribute="leading" id="Gim-Sf-1nF"/>
+                            <constraint firstItem="iX6-rA-tzF" firstAttribute="top" secondItem="65v-4d-qqP" secondAttribute="top" id="HZs-ou-FpH"/>
+                            <constraint firstAttribute="bottom" secondItem="TAH-da-4D4" secondAttribute="bottom" id="IQs-6h-1lU"/>
+                            <constraint firstItem="TAH-da-4D4" firstAttribute="leading" secondItem="iX6-rA-tzF" secondAttribute="leading" id="MND-RI-wFN"/>
+                            <constraint firstItem="TAH-da-4D4" firstAttribute="trailing" secondItem="iX6-rA-tzF" secondAttribute="trailing" id="QWw-pb-Yaj"/>
+                            <constraint firstItem="iX6-rA-tzF" firstAttribute="trailing" secondItem="dCZ-Cz-Tyh" secondAttribute="trailing" id="qMy-ms-TSx"/>
+                            <constraint firstItem="TAH-da-4D4" firstAttribute="top" secondItem="o1X-ze-Yhg" secondAttribute="top" id="qj7-1U-dtX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DJ2-fN-L3c"/>
+                    <connections>
+                        <outlet property="btnSkip" destination="65v-4d-qqP" id="Abv-BU-fbz"/>
+                        <outlet property="pageControl" destination="CRh-Ih-OVK" id="xgx-FP-DSv"/>
+                        <outlet property="splashCollectionView" destination="UwC-R0-Ja9" id="orc-IK-6KH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULf-Ho-3X6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782.60869565217399" y="24.776785714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="embasador" width="370" height="688"/>
+        <image name="selected-page" width="19" height="7"/>
+        <image name="splash-background-image" width="428" height="926"/>
+        <image name="splash-logo-final" width="327" height="200"/>
+        <image name="welcome-back" width="428" height="926"/>
+        <namedColor name="0E4990_Blue">
+            <color red="0.054901960784313725" green="0.28627450980392155" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="11FFBD_Green">
+            <color red="0.066666666666666666" green="1" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

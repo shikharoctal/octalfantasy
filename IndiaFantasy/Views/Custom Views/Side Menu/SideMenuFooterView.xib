@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SideMenuFooterView" customModule="IndiaFantasy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version: 1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlM-9H-mPL" customClass="OctalLabel" customModule="IndiaFantasy" customModuleProvider="target">
+                    <rect key="frame" x="20" y="10" width="101.5" height="45"/>
+                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="14"/>
+                    <color key="textColor" red="0.96705454589999995" green="0.70203471179999999" blue="0.1649923623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App up to date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVK-fZ-4M9" customClass="OctalLabel" customModule="IndiaFantasy" customModuleProvider="target">
+                    <rect key="frame" x="20" y="60" width="143" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="143" id="Mdw-6z-6Ne"/>
+                        <constraint firstAttribute="height" id="fCn-Zr-rDV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
+                    <color key="textColor" red="0.35686274509999999" green="0.43529411759999997" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnJ-wZ-nDO" customClass="OctalButton" customModule="IndiaFantasy" customModuleProvider="target">
+                    <rect key="frame" x="350" y="18" width="70" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="QNz-fa-DTO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="UPDATE">
+                        <color key="titleColor" name="11FFBD_Green"/>
+                    </state>
+                    <connections>
+                        <action selector="btnUpdateAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="qmn-Aj-Ub4"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4M6-bh-vMo">
+                    <rect key="frame" x="0.0" y="0.0" width="430" height="1"/>
+                    <color key="backgroundColor" systemColor="systemFillColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="m47-c0-D5k"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4M6-bh-vMo" secondAttribute="trailing" constant="10" id="J7Z-KU-HSW"/>
+                <constraint firstItem="4M6-bh-vMo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Keh-9V-z9Q"/>
+                <constraint firstItem="HnJ-wZ-nDO" firstAttribute="centerY" secondItem="YlM-9H-mPL" secondAttribute="centerY" id="ROR-G0-bBF"/>
+                <constraint firstItem="XVK-fZ-4M9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="UUJ-WM-IOa"/>
+                <constraint firstItem="YlM-9H-mPL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="bqa-gl-KTq"/>
+                <constraint firstAttribute="trailing" secondItem="HnJ-wZ-nDO" secondAttribute="trailing" constant="20" id="e3I-31-YFd"/>
+                <constraint firstAttribute="bottom" secondItem="XVK-fZ-4M9" secondAttribute="bottom" constant="10" id="hkL-mn-cL5"/>
+                <constraint firstItem="XVK-fZ-4M9" firstAttribute="top" secondItem="YlM-9H-mPL" secondAttribute="bottom" constant="5" id="q58-8i-mX0"/>
+                <constraint firstItem="YlM-9H-mPL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="x3k-ui-9Ng"/>
+                <constraint firstItem="4M6-bh-vMo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ywn-9B-SIN"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnUpdate" destination="HnJ-wZ-nDO" id="beH-7D-SO8"/>
+                <outlet property="lblApptoDateStatic" destination="XVK-fZ-4M9" id="xy6-Dt-t41"/>
+                <outlet property="lblVersionNumber" destination="YlM-9H-mPL" id="SmX-pZ-aSK"/>
+                <outlet property="viewSeprator" destination="4M6-bh-vMo" id="8Gh-Sk-Fpb"/>
+            </connections>
+            <point key="canvasLocation" x="218.84057971014494" y="-113.16964285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="11FFBD_Green">
+            <color red="0.066666666666666666" green="1" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

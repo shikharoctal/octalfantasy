@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold_0.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SeasonWinningTVCell" rowHeight="34" id="KGk-i7-Jjw" customClass="SeasonWinningTVCell" customModule="IndiaFantasy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3OB-yD-6cM">
+                        <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyl-w6-sgt" customClass="OctalLabel" customModule="IndiaFantasy" customModuleProvider="target">
+                                <rect key="frame" x="20" y="10" width="50" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="odl-85-WTU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMh-X0-JUv">
+                                <rect key="frame" x="20" y="33" width="255" height="1"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.43529411759999997" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="by4-BJ-kc4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL6-er-On4" customClass="OctalLabel" customModule="IndiaFantasy" customModuleProvider="target">
+                                <rect key="frame" x="269" y="10" width="6" height="13"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cyl-w6-sgt" firstAttribute="top" secondItem="3OB-yD-6cM" secondAttribute="top" constant="10" id="3jh-YH-t1O"/>
+                            <constraint firstAttribute="trailing" secondItem="TL6-er-On4" secondAttribute="trailing" constant="20" id="506-DU-bfJ"/>
+                            <constraint firstItem="iMh-X0-JUv" firstAttribute="trailing" secondItem="TL6-er-On4" secondAttribute="trailing" id="Hgh-ie-otP"/>
+                            <constraint firstItem="iMh-X0-JUv" firstAttribute="top" secondItem="TL6-er-On4" secondAttribute="bottom" constant="10" id="JKr-x2-Ewe"/>
+                            <constraint firstItem="TL6-er-On4" firstAttribute="top" secondItem="3OB-yD-6cM" secondAttribute="top" constant="10" id="Jlh-m8-9gx"/>
+                            <constraint firstAttribute="bottom" secondItem="iMh-X0-JUv" secondAttribute="bottom" id="NaT-oT-iGX"/>
+                            <constraint firstItem="iMh-X0-JUv" firstAttribute="leading" secondItem="cyl-w6-sgt" secondAttribute="leading" id="UXF-nt-UZT"/>
+                            <constraint firstItem="TL6-er-On4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cyl-w6-sgt" secondAttribute="trailing" constant="12" id="bWc-hx-88S"/>
+                            <constraint firstItem="cyl-w6-sgt" firstAttribute="leading" secondItem="3OB-yD-6cM" secondAttribute="leading" constant="20" id="cs8-8o-psc"/>
+                            <constraint firstItem="iMh-X0-JUv" firstAttribute="top" secondItem="cyl-w6-sgt" secondAttribute="bottom" constant="10" id="pFY-Pf-meo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="3OB-yD-6cM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Q22-ld-5TR"/>
+                    <constraint firstAttribute="bottom" secondItem="3OB-yD-6cM" secondAttribute="bottom" id="hWs-1A-SVZ"/>
+                    <constraint firstItem="3OB-yD-6cM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jGN-Al-SJO"/>
+                    <constraint firstAttribute="trailing" secondItem="3OB-yD-6cM" secondAttribute="trailing" id="oCS-rH-lrt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblPrize" destination="TL6-er-On4" id="htT-La-ssz"/>
+                <outlet property="lblRank" destination="cyl-w6-sgt" id="ngx-pM-HzB"/>
+            </connections>
+            <point key="canvasLocation" x="147.32824427480915" y="-164.08450704225353"/>
+        </tableViewCell>
+    </objects>
+</document>

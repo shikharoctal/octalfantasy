@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Banks</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Axis Bank</string>
+			<key>image</key>
+			<string>Axis</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>BOI</string>
+			<key>image</key>
+			<string>BOI</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>HDFC Bank</string>
+			<key>image</key>
+			<string>HDFC</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>ICICI</string>
+			<key>image</key>
+			<string>ICICI</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Citi Bank</string>
+			<key>image</key>
+			<string>CITI</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>PNB</string>
+			<key>image</key>
+			<string>PNB</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Canra Bank</string>
+			<key>image</key>
+			<string>Canra</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>SBI</string>
+			<key>image</key>
+			<string>SBI</string>
+		</dict>
+	</array>
+	<key>Settings</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Change Password</string>
+			<key>subtitle</key>
+			<string>It will allow you to reset your current password</string>
+			<key>image</key>
+			<string>lock-icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Change Security PIN</string>
+			<key>subtitle</key>
+			<string>It will allow you to reset your current security PIN</string>
+			<key>image</key>
+			<string>lock-icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Enable PIN Login</string>
+			<key>subtitle</key>
+			<string>It will ask you security pin when you open app</string>
+			<key>image</key>
+			<string>lock-icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Enable Push Notifications</string>
+			<key>subtitle</key>
+			<string>It will allow you to get notitified on multiple activities</string>
+			<key>image</key>
+			<string>notification-grey</string>
+		</dict>
+	</array>
+	<key>Seasons</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Daily Contest</string>
+			<key>background</key>
+			<string>dailyContest_bg</string>
+			<key>image</key>
+			<string>dailyContest_ic</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Seasonal Pro</string>
+			<key>background</key>
+			<string>seasonalPro_bg</string>
+			<key>image</key>
+			<string>seasonalPro_ic</string>
+		</dict>
+	</array>
+	<key>ContactUs</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Contact us via call</string>
+			<key>subtitle</key>
+			<string>It will connect you with our support team via call</string>
+			<key>image</key>
+			<string>call-center</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Contact us via chat</string>
+			<key>subtitle</key>
+			<string>It will connect you with our support team via chat</string>
+			<key>image</key>
+			<string>chat-room-icon</string>
+		</dict>
+	</array>
+	<key>PaymentMethods</key>
+	<array>
+		<dict>
+			<key>isSelected</key>
+			<false/>
+			<key>title</key>
+			<string>Credit / Debit / Prepaid Card</string>
+			<key>id</key>
+			<string>1</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>isSelected</key>
+			<false/>
+			<key>title</key>
+			<string>Bank Account</string>
+			<key>id</key>
+			<string>2</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>isSelected</key>
+			<false/>
+			<key>title</key>
+			<string>QR Code Voucher</string>
+			<key>id</key>
+			<string>3</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>TransferMethods</key>
+	<array>
+		<dict>
+			<key>isSelected</key>
+			<false/>
+			<key>title</key>
+			<string>Send to Mobile Number</string>
+			<key>id</key>
+			<string>1</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>isSelected</key>
+			<false/>
+			<key>title</key>
+			<string>Local Bank Transfer</string>
+			<key>id</key>
+			<string>2</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>isSelected</key>
+			<false/>
+			<key>title</key>
+			<string>International Transfer</string>
+			<key>id</key>
+			<string>3</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>StatementTypes</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>All</string>
+			<key>key</key>
+			<string>0</string>
+			<key>type</key>
+			<string>day</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Last 7 days</string>
+			<key>key</key>
+			<string>7</string>
+			<key>type</key>
+			<string>day</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Last 15 days</string>
+			<key>key</key>
+			<string>15</string>
+			<key>type</key>
+			<string>day</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Last 30 days</string>
+			<key>key</key>
+			<string>30</string>
+			<key>type</key>
+			<string>day</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Last 3 months</string>
+			<key>key</key>
+			<string>3</string>
+			<key>type</key>
+			<string>month</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Last 6 months</string>
+			<key>key</key>
+			<string>6</string>
+			<key>type</key>
+			<string>month</string>
+		</dict>
+	</array>
+	<key>SideMenu</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>My Account</string>
+			<key>image</key>
+			<string>accoun-detail</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Wallet</string>
+			<key>image</key>
+			<string>more-unselected</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>How to play</string>
+			<key>image</key>
+			<string>how-to-play-icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Season History</string>
+			<key>image</key>
+			<string>season-history</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>More</string>
+			<key>image</key>
+			<string>more-icon</string>
+		</dict>
+	</array>
+	<key>SideMenu-backup</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>My Account</string>
+			<key>image</key>
+			<string>accoun-detail</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Withdraw</string>
+			<key>image</key>
+			<string>withdraw-amount</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>My Transactions</string>
+			<key>image</key>
+			<string>my-transactions</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Offers</string>
+			<key>image</key>
+			<string>IconMyOffer</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Rewards</string>
+			<key>image</key>
+			<string>reward-icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Missions</string>
+			<key>image</key>
+			<string>missions-icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Responsible Play</string>
+			<key>image</key>
+			<string>responsible-play-icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>How to play</string>
+			<key>image</key>
+			<string>how-to-play-icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>More</string>
+			<key>image</key>
+			<string>more-icon</string>
+		</dict>
+	</array>
+	<key>MoreList</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Invite Friends</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Contest Invite code</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Fantasy Point System</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>How to Play</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Helpdesk</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Work with us</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>About us</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Legality</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>App Version</string>
+		</dict>
+	</array>
+	<key>HowToPlay</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>What is India Fantasy</string>
+			<key>image</key>
+			<string>IconWhat_is_App</string>
+			<key>hitUrl</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Cricket</string>
+			<key>image</key>
+			<string>IconPlayCricket</string>
+			<key>hitUrl</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>StateList</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Andhra Pradesh</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Arunachal Pradesh</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Bihar</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Chhattisgarh</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Chandigarh</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Dadra and Nagar Haveli</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Daman and Diu</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Delhi</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Goa</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Gujarat</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Haryana</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Himachal Pradesh</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Jammu and Kashmir</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Jharkhand</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Karnataka</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Kerala</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Madhya Pradesh</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Maharashtra</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Manipur</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Meghalaya</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Mizoram</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Punjab</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Pondicherry</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Rajasthan</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Tamil Nadu</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Tripura</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Uttar Pradesh</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Uttarakhand</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>West Bengal</string>
+		</dict>
+	</array>
+	<key>ContestOptions</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Create Contest</string>
+			<key>image</key>
+			<string>create-contest-icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Join Contest</string>
+			<key>image</key>
+			<string>join-contest-icon</string>
+		</dict>
+	</array>
+	<key>Winnings</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>₹10 to ₹10,000</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>10</integer>
+			<key>max_value</key>
+			<real>10000</real>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>₹10,001 to ₹50,000</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>10000</integer>
+			<key>max_value</key>
+			<real>50000</real>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>₹50,001 to ₹1,00,000</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<real>50000</real>
+			<key>max_value</key>
+			<real>100000</real>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>₹1,00,001 to ₹10,00,000</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>100000</integer>
+			<key>max_value</key>
+			<real>1000000</real>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>₹10,00,001 to 50,00,000</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>1000000</integer>
+			<key>max_value</key>
+			<real>5000000</real>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>₹50,00,001 and more</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<real>5000000</real>
+			<key>max_value</key>
+			<integer>50000000</integer>
+		</dict>
+	</array>
+	<key>FilterEntry</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>₹10 to ₹100</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>10</integer>
+			<key>max_value</key>
+			<integer>100</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>₹101 to ₹1000</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>101</integer>
+			<key>max_value</key>
+			<integer>1000</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>₹1001 to ₹100000</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<real>1000</real>
+			<key>max_value</key>
+			<real>100000</real>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>₹100001 &amp; more</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<real>100000</real>
+			<key>max_value</key>
+			<real>10000000</real>
+		</dict>
+	</array>
+	<key>Contest Type</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Multi Entry</string>
+			<key>isSelected</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Multi Winner</string>
+			<key>isSelected</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Confirm Contest</string>
+			<key>isSelected</key>
+			<false/>
+		</dict>
+	</array>
+	<key>Contest Size</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>2 Member</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>0</integer>
+			<key>max_value</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>3 to 10</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>3</integer>
+			<key>max_value</key>
+			<integer>10</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>11 to 20</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>11</integer>
+			<key>max_value</key>
+			<integer>20</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>21 to 100</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>21</integer>
+			<key>max_value</key>
+			<integer>100</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>101 to 1000</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>101</integer>
+			<key>max_value</key>
+			<integer>1000</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>1001 to 10,000</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>1001</integer>
+			<key>max_value</key>
+			<integer>10000</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>10,001 to 50,000</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>10001</integer>
+			<key>max_value</key>
+			<integer>50000</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>50,000+</string>
+			<key>isSelected</key>
+			<false/>
+			<key>min_value</key>
+			<integer>50000</integer>
+			<key>max_value</key>
+			<integer>5000000</integer>
+		</dict>
+	</array>
+	<key>KYC</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Verify Bank Details</string>
+			<key>isSelected</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Verify Pan Card</string>
+			<key>isSelected</key>
+			<false/>
+		</dict>
+	</array>
+	<key>TimeFilter</key>
+	<array>
+		<string>Last 7 Days</string>
+		<string>Last 1 Month</string>
+		<string>Last 3 Month</string>
+	</array>
+	<key>TransactionTypeFilter</key>
+	<array>
+		<string>All</string>
+		<string>Withdrawal</string>
+		<string>Deposit</string>
+		<string>Entry Fee</string>
+		<string>Winning</string>
+		<string>Refund</string>
+		<string>Refer</string>
+	</array>
+	<key>GameTypeFilter</key>
+	<array>
+		<string>All</string>
+		<string>Cricket</string>
+	</array>
+	<key>BannedStates</key>
+	<array>
+		<string>AS</string>
+		<string>OD</string>
+		<string>AD</string>
+		<string>TS</string>
+		<string>NL</string>
+		<string>SK</string>
+		<string>ML</string>
+	</array>
+</dict>
+</plist>

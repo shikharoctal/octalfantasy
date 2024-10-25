@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlayerStatsHeaderView" customModule="Ultrafair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="482" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYt-sd-nA8">
+                    <rect key="frame" x="0.0" y="0.0" width="482" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Stats at match Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aS-XK-nHt" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="24" y="13" width="163.5" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="NxP-xa-LaB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTl-wY-dUc" customClass="OctalButton" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="348" y="12.5" width="110" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="oJX-bW-ZE1"/>
+                                <constraint firstAttribute="height" constant="25" id="rEJ-aA-a0c"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Highlight T1" image="arrow-light-down">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="btnHighLightPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="sgD-k6-ZP7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.043773517009999999" green="0.092312507330000002" blue="0.13601988549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="cTl-wY-dUc" firstAttribute="centerY" secondItem="cYt-sd-nA8" secondAttribute="centerY" id="NwT-tp-Ldh"/>
+                        <constraint firstItem="2aS-XK-nHt" firstAttribute="leading" secondItem="cYt-sd-nA8" secondAttribute="leading" constant="24" id="PBQ-AG-zcS"/>
+                        <constraint firstAttribute="height" constant="50" id="Y5m-yn-p6a"/>
+                        <constraint firstAttribute="trailing" secondItem="cTl-wY-dUc" secondAttribute="trailing" constant="24" id="irR-Ve-Wpo"/>
+                        <constraint firstItem="2aS-XK-nHt" firstAttribute="centerY" secondItem="cYt-sd-nA8" secondAttribute="centerY" id="kRS-Ul-rZf"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AfJ-lp-fs4">
+                    <rect key="frame" x="0.0" y="50" width="482" height="39"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAO-ml-Azh" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="24" y="7.5" width="68" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="pBG-dl-Hq2"/>
+                                <constraint firstAttribute="width" constant="68" id="wu7-lo-0Io"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                            <color key="textColor" red="0.96705454589999995" green="0.70203471179999999" blue="0.1649923623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="% SEL BY" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teX-hR-fki" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="414" y="7.5" width="60" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Jjr-er-iv9"/>
+                                <constraint firstAttribute="width" constant="60" id="RMp-oW-Mxi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                            <color key="textColor" red="0.96705454589999995" green="0.70203471179999999" blue="0.1649923623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E69-pF-VyH" customClass="OctalButton" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="325" y="7" width="74" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="74" id="u8E-uk-IjF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="12"/>
+                            <color key="tintColor" red="0.96705454589999995" green="0.70203471179999999" blue="0.1649923623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                            <state key="normal" title="POINTS" image="IconSortDown">
+                                <color key="titleColor" red="0.96705454589999995" green="0.70203471179999999" blue="0.1649923623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="IconSortUp"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.043773517009999999" green="0.092312507330000002" blue="0.13601988549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="E69-pF-VyH" secondAttribute="bottom" constant="7" id="AfJ-eA-lFh"/>
+                        <constraint firstItem="hAO-ml-Azh" firstAttribute="centerY" secondItem="AfJ-lp-fs4" secondAttribute="centerY" id="C5L-cf-67W"/>
+                        <constraint firstItem="hAO-ml-Azh" firstAttribute="leading" secondItem="AfJ-lp-fs4" secondAttribute="leading" constant="24" id="MPh-nF-3j1"/>
+                        <constraint firstItem="teX-hR-fki" firstAttribute="centerY" secondItem="AfJ-lp-fs4" secondAttribute="centerY" id="OGy-3z-fiU"/>
+                        <constraint firstItem="teX-hR-fki" firstAttribute="trailing" secondItem="AfJ-lp-fs4" secondAttribute="trailingMargin" id="STR-YC-hxq"/>
+                        <constraint firstItem="teX-hR-fki" firstAttribute="leading" secondItem="E69-pF-VyH" secondAttribute="trailing" constant="15" id="XnJ-ta-crU"/>
+                        <constraint firstItem="E69-pF-VyH" firstAttribute="top" secondItem="AfJ-lp-fs4" secondAttribute="top" constant="7" id="d6o-4H-DIJ"/>
+                        <constraint firstAttribute="height" constant="39" id="xwP-s6-B7m"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwf-wW-fV2">
+                    <rect key="frame" x="0.0" y="89" width="482" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BDA-Km-K8t"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AfJ-lp-fs4" secondAttribute="trailing" id="AEj-lE-WxN"/>
+                <constraint firstItem="cYt-sd-nA8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AaJ-eS-bMs"/>
+                <constraint firstItem="cYt-sd-nA8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CT3-y6-PGt"/>
+                <constraint firstItem="Pwf-wW-fV2" firstAttribute="top" secondItem="AfJ-lp-fs4" secondAttribute="bottom" id="EJm-Dj-IJc"/>
+                <constraint firstItem="AfJ-lp-fs4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ja7-fx-AGS"/>
+                <constraint firstItem="AfJ-lp-fs4" firstAttribute="top" secondItem="cYt-sd-nA8" secondAttribute="bottom" id="MMh-gc-hg8"/>
+                <constraint firstAttribute="trailing" secondItem="Pwf-wW-fV2" secondAttribute="trailing" id="QDv-EN-sMs"/>
+                <constraint firstAttribute="bottom" secondItem="Pwf-wW-fV2" secondAttribute="bottom" id="VbU-n3-MXS"/>
+                <constraint firstItem="Pwf-wW-fV2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bkY-z0-OrG"/>
+                <constraint firstAttribute="trailing" secondItem="cYt-sd-nA8" secondAttribute="trailing" id="tjM-kk-Esz"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnHiglited" destination="cTl-wY-dUc" id="iUn-04-NkU"/>
+                <outlet property="btnPoints" destination="E69-pF-VyH" id="lRX-AS-kGE"/>
+                <outlet property="lblTitle" destination="2aS-XK-nHt" id="9Ro-7C-xhp"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="-148.66071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IconSortDown" width="6" height="12"/>
+        <image name="IconSortUp" width="6" height="12"/>
+        <image name="arrow-light-down" width="14" height="8"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

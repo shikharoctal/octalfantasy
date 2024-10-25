@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab BarVC-->
+        <scene sceneID="hOX-Da-bJj">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarVC" id="N7i-xH-0VV" customClass="TabBarVC" customModule="IndiaFantasy" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Xbk-TL-9vS"/>
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" id="14C-ua-lB8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="F7B32B_Yellow"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lgo-F6-Yqd" kind="relationship" relationship="viewControllers" id="GFu-nd-1CE"/>
+                        <segue destination="SV8-T0-y8t" kind="relationship" relationship="viewControllers" id="jJV-Si-pnZ"/>
+                        <segue destination="kFD-tO-Wgt" kind="relationship" relationship="viewControllers" id="1Ep-iu-F64"/>
+                        <segue destination="ucc-KQ-fab" kind="relationship" relationship="viewControllers" id="4Vi-2i-UbF"/>
+                        <segue destination="NbK-mS-ZAS" kind="relationship" relationship="viewControllers" id="brI-DB-3hw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQN-6Y-b17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1442" y="-48"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1dx-s7-IVc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ucc-KQ-fab" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="chat_unselected" id="bdr-O5-Gpk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="cHt-UQ-i4I">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.80392156859999997" green="0.12941176469999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MTF-EN-Z3u" kind="relationship" relationship="rootViewController" id="qxl-RM-P8a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AOo-Cg-HRg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-667" y="973"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FQY-dc-jrg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lgo-F6-Yqd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="metro-trophy-white" id="Qpf-As-uP6"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="YCT-2F-y6f">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.80392156859999997" green="0.12941176469999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hxh-2R-Jev" kind="relationship" relationship="rootViewController" id="cZG-86-32q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hd-XM-7zX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1442" y="973"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S3f-Fw-bit">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="SV8-T0-y8t" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="home-unselected" selectedImage="home-selected" id="7Qi-xD-3ya"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="44z-cq-Kw1">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.80392156859999997" green="0.12941176469999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wcb-u4-iRq" kind="relationship" relationship="rootViewController" id="uBI-gX-2XK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8k-ZJ-ta7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2236" y="973"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="mX7-1a-RPn">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CricketFantasyVC" storyboardName="Dashboard" id="wcb-u4-iRq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Home" id="bkm-mz-Zl3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Os4-pm-Kv8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2236" y="1414"/>
+        </scene>
+        <!--MoneyPoolVC-->
+        <scene sceneID="kxl-IO-aXf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MoneyPoolVC" storyboardName="MoneyPool" referencedIdentifier="MoneyPoolVC" id="Hxh-2R-Jev" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Contest" id="nbv-yf-SFZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBe-wC-oLm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1441" y="1414"/>
+        </scene>
+        <!--MyOffersVC-->
+        <scene sceneID="YSv-lD-teo">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ShopVC" storyboardName="More" referencedIdentifier="MyOffersVC" id="MTF-EN-Z3u" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="More" id="Lbh-vX-uCS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQb-WP-nbf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="1405"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ccf-GP-yfa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="NbK-mS-ZAS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="more-unselected" selectedImage="more-selected" id="R8i-Cm-gZN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="ObM-ZU-48A">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.80392156859999997" green="0.12941176469999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Nqp-ko-sF4" kind="relationship" relationship="rootViewController" id="jtX-A3-azk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6xI-Qg-OrF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="973"/>
+        </scene>
+        <!--MyAccountDetailsVC-->
+        <scene sceneID="LBU-lj-0up">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MyAccountDetailsVC" storyboardName="Dashboard" referencedIdentifier="MyAccountDetailsVC" id="Nqp-ko-sF4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Help" id="g2Q-a0-rMs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONT-M0-OZa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="1423"/>
+        </scene>
+        <!--My Fantasy-->
+        <scene sceneID="N8c-i5-4In">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="kFD-tO-Wgt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Fantasy" image="my_game" id="lje-w5-tul"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ke6-gp-Rba">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NML-aG-gtf" kind="relationship" relationship="rootViewController" id="Iah-vR-gQj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kw-h0-ZB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-410.14492753623193" y="-47.544642857142854"/>
+        </scene>
+        <!--SeasonsVC-->
+        <scene sceneID="ogV-0H-rrI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SeasonsVC" storyboardName="Seasons" referencedIdentifier="SeasonsVC" id="NML-aG-gtf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Help" id="JTX-cW-uNn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4c-My-Z7R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat_unselected" width="27" height="28.5"/>
+        <image name="home-selected" width="27" height="27"/>
+        <image name="home-unselected" width="27" height="27"/>
+        <image name="metro-trophy-white" width="16" height="16"/>
+        <image name="more-selected" width="27" height="27"/>
+        <image name="more-unselected" width="27" height="27"/>
+        <image name="my_game" width="32.5" height="32.5"/>
+        <namedColor name="F7B32B_Yellow">
+            <color red="0.96899998188018799" green="0.70200002193450928" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

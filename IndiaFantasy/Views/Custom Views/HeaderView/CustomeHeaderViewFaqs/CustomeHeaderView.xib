@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomeHeaderView" customModule="Ultrafair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="105"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequently Asked Questions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHT-N7-GbJ">
+                    <rect key="frame" x="20" y="0.0" width="288" height="105"/>
+                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEd-QS-JNB">
+                    <rect key="frame" x="318" y="30.666666666666671" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="IiE-fp-zu5"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="Kip-5j-daR"/>
+                        <constraint firstAttribute="width" constant="44" id="f4D-0w-QNO"/>
+                        <constraint firstAttribute="height" constant="44" id="fW5-yW-WJg"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="chevron.down" catalog="system"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjt-Cu-VRP">
+                    <rect key="frame" x="0.0" y="0.0" width="382" height="105"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="btnOnSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="7L3-DG-48E"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yjt-Cu-VRP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="71F-Qb-m40"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cEd-QS-JNB" secondAttribute="trailing" constant="20" id="DuK-gr-RWB"/>
+                <constraint firstItem="HHT-N7-GbJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Fxy-nK-U1u"/>
+                <constraint firstItem="yjt-Cu-VRP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="H2P-Bd-ve7"/>
+                <constraint firstItem="HHT-N7-GbJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="YMc-O9-CqV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yjt-Cu-VRP" secondAttribute="bottom" id="Ykz-po-zDE"/>
+                <constraint firstItem="cEd-QS-JNB" firstAttribute="leading" secondItem="HHT-N7-GbJ" secondAttribute="trailing" constant="10" id="hNn-qs-54L"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="HHT-N7-GbJ" secondAttribute="bottom" id="hhS-vc-5Ga"/>
+                <constraint firstItem="cEd-QS-JNB" firstAttribute="centerY" secondItem="HHT-N7-GbJ" secondAttribute="centerY" id="kZ0-eZ-fIa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yjt-Cu-VRP" secondAttribute="trailing" id="peE-g1-zSv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgIcon" destination="cEd-QS-JNB" id="EXT-cY-2k3"/>
+                <outlet property="lblTitle" destination="HHT-N7-GbJ" id="a9p-F6-UIE"/>
+            </connections>
+            <point key="canvasLocation" x="135.38461538461539" y="-177.36966824644549"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+    </resources>
+</document>

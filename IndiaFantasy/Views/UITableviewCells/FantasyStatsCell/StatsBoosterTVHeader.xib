@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StatsBoosterTVHeader" customModule="IndiaFantasy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="109"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Az6-RC-DlB">
+                    <rect key="frame" x="0.0" y="0.0" width="463" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1m-Ej-F5e">
+                            <rect key="frame" x="0.0" y="0.0" width="463" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booster on the player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQ9-Jc-axs" customClass="OctalLabel" customModule="IndiaFantasy" customModuleProvider="target">
+                                    <rect key="frame" x="15" y="10" width="162.5" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKc-fj-cHW">
+                                    <rect key="frame" x="0.0" y="0.0" width="463" height="50"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="Arrow_White_Down"/>
+                                    <state key="selected" image="Arrow_White_Up"/>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucH-vW-Tib">
+                                    <rect key="frame" x="15" y="49" width="433" height="1"/>
+                                    <color key="backgroundColor" white="1" alpha="0.14000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="dVI-DY-WFx"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="ucH-vW-Tib" secondAttribute="bottom" id="08E-wZ-2Vn"/>
+                                <constraint firstAttribute="height" constant="45" id="1ai-rg-DJE"/>
+                                <constraint firstItem="ZKc-fj-cHW" firstAttribute="leading" secondItem="F1m-Ej-F5e" secondAttribute="leading" id="D2n-Zx-aS1"/>
+                                <constraint firstItem="ucH-vW-Tib" firstAttribute="leading" secondItem="F1m-Ej-F5e" secondAttribute="leading" constant="15" id="HK6-tF-s7u"/>
+                                <constraint firstItem="yQ9-Jc-axs" firstAttribute="top" secondItem="F1m-Ej-F5e" secondAttribute="top" constant="10" id="MGc-8o-dgs"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yQ9-Jc-axs" secondAttribute="trailing" constant="40" id="Zo3-Fh-K6t"/>
+                                <constraint firstItem="ZKc-fj-cHW" firstAttribute="top" secondItem="F1m-Ej-F5e" secondAttribute="top" id="cGf-Ks-o68"/>
+                                <constraint firstAttribute="bottom" secondItem="ZKc-fj-cHW" secondAttribute="bottom" id="hH2-iw-o7z"/>
+                                <constraint firstAttribute="bottom" secondItem="yQ9-Jc-axs" secondAttribute="bottom" constant="10" id="nMF-Qo-dDy"/>
+                                <constraint firstItem="yQ9-Jc-axs" firstAttribute="leading" secondItem="F1m-Ej-F5e" secondAttribute="leading" constant="15" id="o5i-H8-LVa"/>
+                                <constraint firstAttribute="trailing" secondItem="ZKc-fj-cHW" secondAttribute="trailing" id="rjd-Cj-p0N"/>
+                                <constraint firstAttribute="trailing" secondItem="ucH-vW-Tib" secondAttribute="trailing" constant="15" id="wX2-8h-L1Z"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Az6-RC-DlB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3cM-cq-Zq9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Az6-RC-DlB" secondAttribute="bottom" id="Vkn-h9-W1o"/>
+                <constraint firstAttribute="trailing" secondItem="Az6-RC-DlB" secondAttribute="trailing" id="Yge-am-QGM"/>
+                <constraint firstItem="Az6-RC-DlB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zww-J9-2fL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnDropDown" destination="ZKc-fj-cHW" id="NKw-Dt-8Of"/>
+                <outlet property="lblTitle" destination="yQ9-Jc-axs" id="giC-SE-KGy"/>
+                <outlet property="viewContanier" destination="F1m-Ej-F5e" id="XPV-zR-eD8"/>
+            </connections>
+            <point key="canvasLocation" x="226.81159420289856" y="-67.96875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Arrow_White_Down" width="14" height="8"/>
+        <image name="Arrow_White_Up" width="14" height="8"/>
+    </resources>
+</document>

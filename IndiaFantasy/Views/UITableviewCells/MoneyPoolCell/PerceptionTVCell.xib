@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="311" id="KGk-i7-Jjw" customClass="PerceptionTVCell" customModule="IndiaFantasy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="528" height="311"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="528" height="311"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4a-tM-tB8">
+                        <rect key="frame" x="20" y="5" width="488" height="299.33333333333331"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBi-lS-9Kf" customClass="OctalLabel" customModule="IndiaFantasy" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="448" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zmU-RP-LGE">
+                                <rect key="frame" x="244" y="0.0" width="0.0" height="0.0"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arK-Ni-wto">
+                                        <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwa-a1-cd0" customClass="OctalLabel" customModule="IndiaFantasy" customModuleProvider="target">
+                                                <rect key="frame" x="19.999999999999996" y="5" width="59.666666666666657" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="344452_BG"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hwa-a1-cd0" secondAttribute="trailing" constant="20" id="95Z-NG-y1S"/>
+                                            <constraint firstItem="hwa-a1-cd0" firstAttribute="top" secondItem="arK-Ni-wto" secondAttribute="top" constant="5" id="RJ2-Mf-C5F"/>
+                                            <constraint firstAttribute="bottom" secondItem="hwa-a1-cd0" secondAttribute="bottom" constant="5" id="ZNy-kF-0p8"/>
+                                            <constraint firstAttribute="height" constant="30" id="fZM-GZ-uAx"/>
+                                            <constraint firstItem="hwa-a1-cd0" firstAttribute="leading" secondItem="arK-Ni-wto" secondAttribute="leading" constant="20" id="qp0-jQ-FId"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="3OC-lo-LCP">
+                                <rect key="frame" x="20" y="53.333333333333343" width="448" height="226.00000000000003"/>
+                                <subviews>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UV3-ch-GPC" customClass="OctalButton" customModule="IndiaFantasy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="448" height="38"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="Vmm-6g-HLX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" name="01030C_Black"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="19"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Juy-EV-ykZ" customClass="OctalButton" customModule="IndiaFantasy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="47" width="448" height="38"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="9TQ-EC-udH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" name="01030C_Black"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="19"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9M-uc-H0O" customClass="OctalButton" customModule="IndiaFantasy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="94" width="448" height="38"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="wuv-FS-hdA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" name="01030C_Black"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="19"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mak-oC-Pj4" customClass="OctalButton" customModule="IndiaFantasy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="141" width="448" height="38"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="9Be-Kb-q7g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" name="01030C_Black"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="19"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99J-Qk-oPt" customClass="OctalLabel" customModule="IndiaFantasy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="188" width="448" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" name="F7B32B_Yellow"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mpU-O8-HKj">
+                                <rect key="frame" x="83" y="126" width="6.6666666666666714" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="0E4990_Blue"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3OC-lo-LCP" secondAttribute="bottom" constant="20" id="A1D-cl-b38"/>
+                            <constraint firstAttribute="trailing" secondItem="3OC-lo-LCP" secondAttribute="trailing" constant="20" id="DOV-du-8aA"/>
+                            <constraint firstItem="3OC-lo-LCP" firstAttribute="leading" secondItem="z4a-tM-tB8" secondAttribute="leading" constant="20" id="I0k-bS-bXY"/>
+                            <constraint firstItem="IBi-lS-9Kf" firstAttribute="top" secondItem="zmU-RP-LGE" secondAttribute="bottom" constant="20" id="VCw-zd-YRG"/>
+                            <constraint firstItem="3OC-lo-LCP" firstAttribute="top" secondItem="IBi-lS-9Kf" secondAttribute="bottom" constant="14" id="Wc6-57-OfZ"/>
+                            <constraint firstAttribute="trailing" secondItem="IBi-lS-9Kf" secondAttribute="trailing" constant="20" id="dMt-ch-5Yp"/>
+                            <constraint firstItem="zmU-RP-LGE" firstAttribute="top" secondItem="z4a-tM-tB8" secondAttribute="top" id="hKN-vP-U6c"/>
+                            <constraint firstItem="zmU-RP-LGE" firstAttribute="centerX" secondItem="z4a-tM-tB8" secondAttribute="centerX" id="kZY-W9-b9J"/>
+                            <constraint firstItem="IBi-lS-9Kf" firstAttribute="leading" secondItem="z4a-tM-tB8" secondAttribute="leading" constant="20" id="pE0-IY-0jc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="z4a-tM-tB8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="4sS-tp-T1m"/>
+                    <constraint firstAttribute="trailing" secondItem="z4a-tM-tB8" secondAttribute="trailing" constant="20" id="QGK-kF-a1r"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="z4a-tM-tB8" secondAttribute="bottom" constant="5" id="hSf-kw-g6k"/>
+                    <constraint firstItem="z4a-tM-tB8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pDd-f6-0n4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnOptionA" destination="UV3-ch-GPC" id="oGt-CR-8eI"/>
+                <outlet property="btnOptionB" destination="Juy-EV-ykZ" id="Up3-FU-dpY"/>
+                <outlet property="btnOptionC" destination="i9M-uc-H0O" id="af5-8x-LoQ"/>
+                <outlet property="btnOptionD" destination="mak-oC-Pj4" id="6Ni-db-ZQs"/>
+                <outlet property="lblInvtMoney" destination="99J-Qk-oPt" id="NPo-Us-lFC"/>
+                <outlet property="lblQuestion" destination="IBi-lS-9Kf" id="tI7-nm-MTV"/>
+                <outlet property="lblTimer" destination="hwa-a1-cd0" id="uc3-g5-NRx"/>
+            </connections>
+            <point key="canvasLocation" x="349.61832061068702" y="-56.690140845070424"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="01030C_Black">
+            <color red="0.0039215686274509803" green="0.011764705882352941" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="0E4990_Blue">
+            <color red="0.054901960784313725" green="0.28627450980392155" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="344452_BG">
+            <color red="0.20399999618530273" green="0.2669999897480011" blue="0.32199999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="F7B32B_Yellow">
+            <color red="0.96899998188018799" green="0.70200002193450928" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

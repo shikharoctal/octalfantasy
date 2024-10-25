@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold_0.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeasonNavigation" customModule="Ultrafair" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="dC0-hA-vNY" id="Ssy-UV-peg"/>
+                <outlet property="btnBackWidth" destination="fV8-ll-HF9" id="XeQ-iT-aOE"/>
+                <outlet property="btnCreateTeam" destination="N1C-9C-QjW" id="JDa-WB-eVw"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="icU-tN-KVN"/>
+                <outlet property="imgViewBG" destination="b3Z-1L-9tJ" id="TmP-1t-cyV"/>
+                <outlet property="lblSubTitle" destination="6x3-kW-d5A" id="dxp-zm-4xA"/>
+                <outlet property="lblTitle" destination="UlU-iG-CSU" id="bLs-kh-Ek6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ao6-0r-rN1">
+                    <rect key="frame" x="0.0" y="0.0" width="424" height="100"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_banner" translatesAutoresizingMaskIntoConstraints="NO" id="b3Z-1L-9tJ">
+                            <rect key="frame" x="0.0" y="0.0" width="424" height="100"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dC0-hA-vNY">
+                            <rect key="frame" x="15" y="48" width="30" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BkN-oB-LJd"/>
+                                <constraint firstAttribute="width" constant="30" id="fV8-ll-HF9"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="back-white-nav"/>
+                            <connections>
+                                <action selector="btnBackPressed:" destination="-1" eventType="touchUpInside" id="l1f-be-Qp5"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="UlU-iG-CSU" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="55" y="57.5" width="229" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="kwR-NB-6aN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6x3-kW-d5A" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="55" y="78.5" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                            <color key="textColor" name="11FFBD_Green"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1C-9C-QjW" customClass="OctalButton" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="294" y="53" width="110" height="30"/>
+                            <color key="backgroundColor" name="11FFBD_Green"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="AON-nY-9AO"/>
+                                <constraint firstAttribute="width" constant="110" id="pVd-eg-cRy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="10"/>
+                            <color key="tintColor" name="01030C_Black"/>
+                            <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="  CREATE TEAM" image="add-team-white">
+                                <color key="titleColor" name="01030C_Black"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnCreateTeamPressed:" destination="-1" eventType="touchUpInside" id="gXd-RJ-Wxg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="N1C-9C-QjW" firstAttribute="leading" secondItem="UlU-iG-CSU" secondAttribute="trailing" constant="10" id="4nM-TC-Rut"/>
+                        <constraint firstItem="UlU-iG-CSU" firstAttribute="leading" secondItem="dC0-hA-vNY" secondAttribute="trailing" constant="10" id="Fxy-mA-znC"/>
+                        <constraint firstItem="dC0-hA-vNY" firstAttribute="leading" secondItem="Ao6-0r-rN1" secondAttribute="leading" constant="15" id="Ilj-g1-5oQ"/>
+                        <constraint firstItem="b3Z-1L-9tJ" firstAttribute="top" secondItem="Ao6-0r-rN1" secondAttribute="top" id="Iuy-XS-BRg"/>
+                        <constraint firstAttribute="bottom" secondItem="dC0-hA-vNY" secondAttribute="bottom" constant="12" id="MPb-ua-cGs"/>
+                        <constraint firstItem="b3Z-1L-9tJ" firstAttribute="leading" secondItem="Ao6-0r-rN1" secondAttribute="leading" id="PhI-An-OIJ"/>
+                        <constraint firstItem="6x3-kW-d5A" firstAttribute="top" secondItem="UlU-iG-CSU" secondAttribute="bottom" id="XBV-6G-nRx"/>
+                        <constraint firstItem="6x3-kW-d5A" firstAttribute="leading" secondItem="UlU-iG-CSU" secondAttribute="leading" id="dCG-Q8-VVL"/>
+                        <constraint firstItem="N1C-9C-QjW" firstAttribute="centerY" secondItem="dC0-hA-vNY" secondAttribute="centerY" id="iYH-77-Mvw"/>
+                        <constraint firstItem="UlU-iG-CSU" firstAttribute="centerY" secondItem="dC0-hA-vNY" secondAttribute="centerY" id="mn0-g4-7T1"/>
+                        <constraint firstAttribute="trailing" secondItem="N1C-9C-QjW" secondAttribute="trailing" constant="20" id="rg2-Cj-EfQ"/>
+                        <constraint firstAttribute="bottom" secondItem="b3Z-1L-9tJ" secondAttribute="bottom" id="vdZ-yG-w1B"/>
+                        <constraint firstAttribute="trailing" secondItem="b3Z-1L-9tJ" secondAttribute="trailing" id="wzb-tg-C3Z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ao6-0r-rN1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BHw-3R-0we"/>
+                <constraint firstItem="Ao6-0r-rN1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JdD-iy-4P6"/>
+                <constraint firstItem="Ao6-0r-rN1" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="eiy-yc-2pR"/>
+                <constraint firstItem="Ao6-0r-rN1" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="ro1-hS-Ubx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="49.600000000000001" y="-27.886056971514247"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add-team-white" width="16" height="16"/>
+        <image name="back-white-nav" width="19" height="19"/>
+        <image name="top_banner" width="428" height="108"/>
+        <namedColor name="01030C_Black">
+            <color red="0.0039215686274509803" green="0.011764705882352941" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="11FFBD_Green">
+            <color red="0.066666666666666666" green="1" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

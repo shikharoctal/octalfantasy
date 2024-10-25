@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Medium.ttf">
+            <string>Gilroy-Medium</string>
+        </array>
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderViewSideMenu" customModule="Ultrafair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="509" height="69"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75D-FK-BTs">
+                    <rect key="frame" x="0.0" y="0.0" width="509" height="69"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-92-x3L">
+                            <rect key="frame" x="15" y="24.666666666666671" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="0il-Uw-OMR"/>
+                                <constraint firstAttribute="width" constant="20" id="9BI-fK-Kgd"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="104" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKv-M6-VcI" customClass="OctalLabel" customModule="Ultrafair" customModuleProvider="target">
+                            <rect key="frame" x="47" y="0.0" width="417" height="68"/>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-light-down" translatesAutoresizingMaskIntoConstraints="NO" id="mkc-KC-Rnd">
+                            <rect key="frame" x="484" y="26.666666666666671" width="10" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="6jH-Y1-2LE"/>
+                                <constraint firstAttribute="width" constant="10" id="t2P-X6-nAO"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Acf-1D-gdz">
+                            <rect key="frame" x="15" y="68" width="479" height="1"/>
+                            <color key="backgroundColor" systemColor="systemFillColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="7nE-Cj-Nqd"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZf-Ij-ieX">
+                            <rect key="frame" x="0.0" y="0.0" width="509" height="69"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="12"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnOnSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="MB9-5h-iSW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Acf-1D-gdz" firstAttribute="top" secondItem="qKv-M6-VcI" secondAttribute="bottom" id="4gh-PH-U5s"/>
+                        <constraint firstItem="KZf-Ij-ieX" firstAttribute="leading" secondItem="75D-FK-BTs" secondAttribute="leading" id="8Bo-rL-QBp"/>
+                        <constraint firstItem="6LM-92-x3L" firstAttribute="centerY" secondItem="75D-FK-BTs" secondAttribute="centerY" id="8Q7-OM-QKl"/>
+                        <constraint firstItem="mkc-KC-Rnd" firstAttribute="leading" secondItem="qKv-M6-VcI" secondAttribute="trailing" constant="20" id="I1z-vF-rzd"/>
+                        <constraint firstItem="KZf-Ij-ieX" firstAttribute="top" secondItem="75D-FK-BTs" secondAttribute="top" id="PCK-Vh-57Y"/>
+                        <constraint firstItem="mkc-KC-Rnd" firstAttribute="centerY" secondItem="75D-FK-BTs" secondAttribute="centerY" id="TuJ-eB-DIf"/>
+                        <constraint firstItem="qKv-M6-VcI" firstAttribute="leading" secondItem="6LM-92-x3L" secondAttribute="trailing" constant="12" id="U0c-1I-Wow"/>
+                        <constraint firstItem="Acf-1D-gdz" firstAttribute="leading" secondItem="75D-FK-BTs" secondAttribute="leading" constant="15" id="bNh-JK-gHd"/>
+                        <constraint firstAttribute="trailing" secondItem="mkc-KC-Rnd" secondAttribute="trailing" constant="15" id="fmR-sJ-D8d"/>
+                        <constraint firstItem="6LM-92-x3L" firstAttribute="leading" secondItem="75D-FK-BTs" secondAttribute="leading" constant="15" id="jue-cC-5iB"/>
+                        <constraint firstAttribute="trailing" secondItem="Acf-1D-gdz" secondAttribute="trailing" constant="15" id="mCF-oH-ocT"/>
+                        <constraint firstItem="qKv-M6-VcI" firstAttribute="top" secondItem="75D-FK-BTs" secondAttribute="top" id="oH4-lx-k6l"/>
+                        <constraint firstAttribute="bottom" secondItem="KZf-Ij-ieX" secondAttribute="bottom" id="wzf-SR-CCl"/>
+                        <constraint firstAttribute="bottom" secondItem="Acf-1D-gdz" secondAttribute="bottom" id="zJE-6d-0AP"/>
+                        <constraint firstAttribute="trailing" secondItem="KZf-Ij-ieX" secondAttribute="trailing" id="zRU-Ef-bQk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="75D-FK-BTs" secondAttribute="bottom" id="58e-dA-ZmL"/>
+                <constraint firstItem="75D-FK-BTs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9wE-ok-2k1"/>
+                <constraint firstItem="75D-FK-BTs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oSx-bS-JzV"/>
+                <constraint firstItem="75D-FK-BTs" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="puQ-ko-tWW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgArrow" destination="mkc-KC-Rnd" id="SOM-Ht-sKd"/>
+                <outlet property="imgIcon" destination="6LM-92-x3L" id="cTp-yv-kjX"/>
+                <outlet property="lblTitle" destination="qKv-M6-VcI" id="DBw-TS-dde"/>
+                <outlet property="viewLine" destination="Acf-1D-gdz" id="ELR-Gh-fre"/>
+            </connections>
+            <point key="canvasLocation" x="134.61538461538461" y="-286.84834123222748"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow-light-down" width="13.666666984558105" height="8"/>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

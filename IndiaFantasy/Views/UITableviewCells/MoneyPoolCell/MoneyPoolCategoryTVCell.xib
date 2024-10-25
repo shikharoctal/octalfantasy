@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MoneyPoolCategoryTVCell" rowHeight="67" id="KGk-i7-Jjw" customClass="MoneyPoolCategoryTVCell" customModule="IndiaFantasy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="463" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtP-ab-EdV">
+                        <rect key="frame" x="0.0" y="0.0" width="463" height="67"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cay-AO-Gbe" customClass="OctalLabel" customModule="IndiaFantasy" customModuleProvider="target">
+                                <rect key="frame" x="20" y="12" width="7.6666666666666679" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyN-5W-w2d">
+                                <rect key="frame" x="417.66666666666669" y="18.666666666666671" width="25.333333333333314" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="T0r-YV-6R4"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_radio"/>
+                                <state key="selected" image="ic_radio_selected"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QyN-5W-w2d" firstAttribute="centerY" secondItem="cay-AO-Gbe" secondAttribute="centerY" id="5Pe-xQ-F7m"/>
+                            <constraint firstItem="QyN-5W-w2d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cay-AO-Gbe" secondAttribute="trailing" constant="20" id="AVU-o0-N1Q"/>
+                            <constraint firstAttribute="bottom" secondItem="cay-AO-Gbe" secondAttribute="bottom" constant="12" id="Hg3-2j-kc8"/>
+                            <constraint firstItem="cay-AO-Gbe" firstAttribute="top" secondItem="BtP-ab-EdV" secondAttribute="top" constant="12" id="Ou1-Wr-Y3P"/>
+                            <constraint firstAttribute="trailing" secondItem="QyN-5W-w2d" secondAttribute="trailing" constant="20" id="XUg-Nm-O7h"/>
+                            <constraint firstItem="cay-AO-Gbe" firstAttribute="leading" secondItem="BtP-ab-EdV" secondAttribute="leading" constant="20" id="qGf-yr-7IU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="BtP-ab-EdV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PmF-fX-2x7"/>
+                    <constraint firstItem="BtP-ab-EdV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lBw-jV-XmV"/>
+                    <constraint firstAttribute="trailing" secondItem="BtP-ab-EdV" secondAttribute="trailing" id="laW-02-2sN"/>
+                    <constraint firstAttribute="bottom" secondItem="BtP-ab-EdV" secondAttribute="bottom" id="ndq-bF-KV6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnSelect" destination="QyN-5W-w2d" id="vhZ-TZ-f9l"/>
+                <outlet property="lblTitle" destination="cay-AO-Gbe" id="G8H-Fr-PQZ"/>
+            </connections>
+            <point key="canvasLocation" x="238.93129770992365" y="-4.5774647887323949"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_radio" width="25.333333969116211" height="25"/>
+        <image name="ic_radio_selected" width="25.333333969116211" height="25"/>
+    </resources>
+</document>
