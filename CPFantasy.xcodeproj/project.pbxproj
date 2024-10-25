@@ -1396,22 +1396,7 @@
 			children = (
 				8D1D802A2BA17B6E009DC5B4 /* IndiaFantasy.entitlements */,
 				8D14869D2B8F00730021E996 /* ViewController.swift */,
-				8D14869E2B8F00730021E996 /* AppManager */,
-				8D1486A12B8F00730021E996 /* ApiClient */,
-				8D1486A52B8F00730021E996 /* Resources */,
-				8D1486A92B8F00730021E996 /* Assets.xcassets */,
-				8D1486AA2B8F00730021E996 /* Tabbar */,
-				8D1486AD2B8F00730021E996 /* GoogleService-Info.plist */,
-				8D1486AE2B8F00730021E996 /* LaunchScreen.storyboard */,
-				8D1486B02B8F00730021E996 /* Main.storyboard */,
-				8D1486B22B8F00730021E996 /* Utilities */,
-				8D1487EE2B8F00730021E996 /* Constant */,
-				8D1487F02B8F00730021E996 /* Extentions */,
-				8D1487FB2B8F00730021E996 /* Model */,
-				8D14880B2B8F00730021E996 /* AppDelegate.swift */,
-				8D14880C2B8F00730021E996 /* Fonts */,
-				8D1488442B8F00730021E996 /* Controllers */,
-				8D1488C82B8F00730021E996 /* Views */,
+				8DEB0BBC2CCB9DA100CB202A /* Classes */,
 				8D1489AC2B8F00740021E996 /* Info.plist */,
 			);
 			path = IndiaFantasy;
@@ -2616,6 +2601,29 @@
 				8DD085642BFB869500BC4E0C /* CFHelper.swift */,
 			);
 			path = CFHelper;
+			sourceTree = "<group>";
+		};
+		8DEB0BBC2CCB9DA100CB202A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8D14869E2B8F00730021E996 /* AppManager */,
+				8D1486A12B8F00730021E996 /* ApiClient */,
+				8D1486A52B8F00730021E996 /* Resources */,
+				8D1486A92B8F00730021E996 /* Assets.xcassets */,
+				8D1486AA2B8F00730021E996 /* Tabbar */,
+				8D1486AD2B8F00730021E996 /* GoogleService-Info.plist */,
+				8D1486AE2B8F00730021E996 /* LaunchScreen.storyboard */,
+				8D1486B02B8F00730021E996 /* Main.storyboard */,
+				8D1486B22B8F00730021E996 /* Utilities */,
+				8D1487EE2B8F00730021E996 /* Constant */,
+				8D1487F02B8F00730021E996 /* Extentions */,
+				8D1487FB2B8F00730021E996 /* Model */,
+				8D14880B2B8F00730021E996 /* AppDelegate.swift */,
+				8D14880C2B8F00730021E996 /* Fonts */,
+				8D1488442B8F00730021E996 /* Controllers */,
+				8D1488C82B8F00730021E996 /* Views */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		A7153709437994015F6C1E76 /* Pods */ = {

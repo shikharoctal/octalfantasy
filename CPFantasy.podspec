@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'Your Name' => 'you@example.com' }
   s.source       = { :git => 'https://github.com/shikharoctal/octalfantasy.git', :tag => s.version.to_s }
-  s.source_files = '**/*.{h,m,swift}'
+  s.source_files = 'Classes/**/*.{h,m,swift}'
   s.platform     = :ios, '13.0'
 end
