@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FBSDKCoreKit
+//import FBSDKCoreKit
 import AppTrackingTransparency
 
 class SignUpVC: UIViewController {
@@ -25,36 +25,36 @@ class SignUpVC: UIViewController {
       //  requestPermission()
     }
     
-    private func requestPermission() {
-        
-        if #available(iOS 14, *) {
-            ATTrackingManager.requestTrackingAuthorization { status in
-                switch status {
-                case .authorized:
-                    Settings.shared.isAutoLogAppEventsEnabled = true
-                    Settings.shared.isAdvertiserTrackingEnabled = true
-                    Settings.shared.isAdvertiserIDCollectionEnabled = true
-                case .denied:
-                    Settings.shared.isAutoLogAppEventsEnabled = false
-                    Settings.shared.isAdvertiserTrackingEnabled = false
-                    Settings.shared.isAdvertiserIDCollectionEnabled = false
-                    print("Denied")
-                case .notDetermined:
-                    // Tracking authorization dialog has not been shown
-                    print("Not Determined")
-                case .restricted:
-                    print("Restricted")
-                @unknown default:
-                    print("Unknown")
-                }
-            }
-        } else {
-            // Fallback on earlier versions
-            Settings.shared.isAutoLogAppEventsEnabled = true
-            Settings.shared.isAdvertiserTrackingEnabled = true
-            Settings.shared.isAdvertiserIDCollectionEnabled = true
-        }
-    }
+//    private func requestPermission() {
+//        
+//        if #available(iOS 14, *) {
+//            ATTrackingManager.requestTrackingAuthorization { status in
+//                switch status {
+//                case .authorized:
+//                    Settings.shared.isAutoLogAppEventsEnabled = true
+//                    Settings.shared.isAdvertiserTrackingEnabled = true
+//                    Settings.shared.isAdvertiserIDCollectionEnabled = true
+//                case .denied:
+//                    Settings.shared.isAutoLogAppEventsEnabled = false
+//                    Settings.shared.isAdvertiserTrackingEnabled = false
+//                    Settings.shared.isAdvertiserIDCollectionEnabled = false
+//                    print("Denied")
+//                case .notDetermined:
+//                    // Tracking authorization dialog has not been shown
+//                    print("Not Determined")
+//                case .restricted:
+//                    print("Restricted")
+//                @unknown default:
+//                    print("Unknown")
+//                }
+//            }
+//        } else {
+//            // Fallback on earlier versions
+//            Settings.shared.isAutoLogAppEventsEnabled = true
+//            Settings.shared.isAdvertiserTrackingEnabled = true
+//            Settings.shared.isAdvertiserIDCollectionEnabled = true
+//        }
+//    }
 
     //MARK: Email Sign-up Btn Action
     @IBAction func btnEmailSignUpPressed(_ sender: UIButton) {
@@ -74,10 +74,10 @@ class SignUpVC: UIViewController {
 
     //MARK: Facebook Sign-up Btn Action
     @IBAction func btnFacebookSignUpPressed(_ sender: UIButton) {
-        SocialLoginHelper.shared.handleLogInWithFacebookButtonPress()
-        SocialLoginHelper.shared.completionHandler = { data in
-            self.socialSignup(request: data)
-        }
+//        SocialLoginHelper.shared.handleLogInWithFacebookButtonPress()
+//        SocialLoginHelper.shared.completionHandler = { data in
+//            self.socialSignup(request: data)
+//        }
     }
     
     //MARK: Apple Sign-up Btn Action

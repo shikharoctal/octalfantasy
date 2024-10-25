@@ -214,10 +214,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CashfreePG/CashfreePG.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CashfreePGCoreSDK/CashfreePGCoreSDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CashfreePGUISDK/CashfreePGUISDK.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AMPopTip/AMPopTip.framework"
@@ -258,10 +254,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CashfreePG/CashfreePG.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CashfreePGCoreSDK/CashfreePGCoreSDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CashfreePGUISDK/CashfreePGUISDK.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

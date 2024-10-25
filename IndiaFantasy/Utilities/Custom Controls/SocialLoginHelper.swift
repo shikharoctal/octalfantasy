@@ -7,7 +7,7 @@
 
 import UIKit
 import AuthenticationServices
-import FBSDKLoginKit
+//import FBSDKLoginKit
 import GoogleSignIn
 
 class SocialLoginHelper: UIViewController {
@@ -16,53 +16,53 @@ class SocialLoginHelper: UIViewController {
     var completionHandler : ((_ userInfo: SocialLoginRequest) -> Void)?
     
     //MARK: - FaceBook Login
-    func handleLogInWithFacebookButtonPress() {
-        
-        let fblogin = LoginManager()
-        fblogin.logOut()
-        
-        let loginManager = LoginManager()
-        
-        func getFacebookProfileInfo(accessToken:String) {
-            let params = ["fields" : "id, name, first_name, last_name, picture.type(large), email"]
-            
-            GraphRequest(graphPath: "me", parameters: params).start( completion: { (connection, result, error) in
-                
-                guard let fbDetails = result as? [String: Any], error == nil else {
-                    debugPrint("Facebook SignIn Error --> \(error?.localizedDescription ?? "")")
-                    return
-                }
-                
-                let userId = fbDetails["id"] as? String ?? ""
-                let email = fbDetails["email"] as? String ?? ""
-                let name = fbDetails["name"] as? String ?? ""
-                let firstName = fbDetails["first_name"] as? String ?? ""
-                let lastName = fbDetails["last_name"] as? String ?? ""
-                
-                let request = SocialLoginRequest(email: email, social_id: userId, name: name, first_name: firstName, last_name: lastName, social_type: .facebook)
-                
-                debugPrint("Facebook SignIn Details --> \(request)")
-                
-                if let comp = self.completionHandler{
-                    comp(request)
-                }
-            })
-        }
-        
-        if let accessToken = AccessToken.current{
-            getFacebookProfileInfo(accessToken: accessToken.tokenString)
-        } else {
-            
-            loginManager.logIn(permissions: ["public_profile","email"], from: self) { (result, error) in
-                if (error == nil){
-                    let fbloginresult : LoginManagerLoginResult = result!
-                    if(fbloginresult.grantedPermissions.contains("email")){
-                        getFacebookProfileInfo(accessToken: AccessToken.current?.tokenString ?? "")
-                    }
-                }
-            }
-        }
-    }
+//    func handleLogInWithFacebookButtonPress() {
+//        
+//        let fblogin = LoginManager()
+//        fblogin.logOut()
+//        
+//        let loginManager = LoginManager()
+//        
+//        func getFacebookProfileInfo(accessToken:String) {
+//            let params = ["fields" : "id, name, first_name, last_name, picture.type(large), email"]
+//            
+//            GraphRequest(graphPath: "me", parameters: params).start( completion: { (connection, result, error) in
+//                
+//                guard let fbDetails = result as? [String: Any], error == nil else {
+//                    debugPrint("Facebook SignIn Error --> \(error?.localizedDescription ?? "")")
+//                    return
+//                }
+//                
+//                let userId = fbDetails["id"] as? String ?? ""
+//                let email = fbDetails["email"] as? String ?? ""
+//                let name = fbDetails["name"] as? String ?? ""
+//                let firstName = fbDetails["first_name"] as? String ?? ""
+//                let lastName = fbDetails["last_name"] as? String ?? ""
+//                
+//                let request = SocialLoginRequest(email: email, social_id: userId, name: name, first_name: firstName, last_name: lastName, social_type: .facebook)
+//                
+//                debugPrint("Facebook SignIn Details --> \(request)")
+//                
+//                if let comp = self.completionHandler{
+//                    comp(request)
+//                }
+//            })
+//        }
+//        
+//        if let accessToken = AccessToken.current{
+//            getFacebookProfileInfo(accessToken: accessToken.tokenString)
+//        } else {
+//            
+//            loginManager.logIn(permissions: ["public_profile","email"], from: self) { (result, error) in
+//                if (error == nil){
+//                    let fbloginresult : LoginManagerLoginResult = result!
+//                    if(fbloginresult.grantedPermissions.contains("email")){
+//                        getFacebookProfileInfo(accessToken: AccessToken.current?.tokenString ?? "")
+//                    }
+//                }
+//            }
+//        }
+//    }
     
     //MARK: - Googele Login
     func handleLogInWithGoogleButtonPress(controller:UIViewController) {

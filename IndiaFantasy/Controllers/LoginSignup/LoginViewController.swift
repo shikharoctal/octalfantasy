@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FBSDKCoreKit
+//import FBSDKCoreKit
 import AppTrackingTransparency
 
 class LoginViewController: UIViewController {
@@ -66,36 +66,36 @@ class LoginViewController: UIViewController {
         //btnSwitchPressed(btnMobile)
     }
     
-    @objc func requestPermission() {
-        
-        if #available(iOS 14, *) {
-            ATTrackingManager.requestTrackingAuthorization { status in
-                switch status {
-                case .authorized:
-                    Settings.shared.isAutoLogAppEventsEnabled = true
-                    Settings.shared.isAdvertiserTrackingEnabled = true
-                    Settings.shared.isAdvertiserIDCollectionEnabled = true
-                case .denied:
-                    Settings.shared.isAutoLogAppEventsEnabled = false
-                    Settings.shared.isAdvertiserTrackingEnabled = false
-                    Settings.shared.isAdvertiserIDCollectionEnabled = false
-                    print("Denied")
-                case .notDetermined:
-                    // Tracking authorization dialog has not been shown
-                    print("Not Determined")
-                case .restricted:
-                    print("Restricted")
-                @unknown default:
-                    print("Unknown")
-                }
-            }
-        } else {
-            // Fallback on earlier versions
-            Settings.shared.isAutoLogAppEventsEnabled = true
-            Settings.shared.isAdvertiserTrackingEnabled = true
-            Settings.shared.isAdvertiserIDCollectionEnabled = true
-        }
-    }
+//    @objc func requestPermission() {
+//        
+//        if #available(iOS 14, *) {
+//            ATTrackingManager.requestTrackingAuthorization { status in
+//                switch status {
+//                case .authorized:
+//                    Settings.shared.isAutoLogAppEventsEnabled = true
+//                    Settings.shared.isAdvertiserTrackingEnabled = true
+//                    Settings.shared.isAdvertiserIDCollectionEnabled = true
+//                case .denied:
+//                    Settings.shared.isAutoLogAppEventsEnabled = false
+//                    Settings.shared.isAdvertiserTrackingEnabled = false
+//                    Settings.shared.isAdvertiserIDCollectionEnabled = false
+//                    print("Denied")
+//                case .notDetermined:
+//                    // Tracking authorization dialog has not been shown
+//                    print("Not Determined")
+//                case .restricted:
+//                    print("Restricted")
+//                @unknown default:
+//                    print("Unknown")
+//                }
+//            }
+//        } else {
+//            // Fallback on earlier versions
+//            Settings.shared.isAutoLogAppEventsEnabled = true
+//            Settings.shared.isAdvertiserTrackingEnabled = true
+//            Settings.shared.isAdvertiserIDCollectionEnabled = true
+//        }
+//    }
 
 //    @IBAction func btnSwitchPressed(_ sender: UIButton) {
 //
@@ -160,7 +160,7 @@ class LoginViewController: UIViewController {
 
     //MARK: Facebook Sign-in Btn Action
     @IBAction func btnFacebookSignInPressed(_ sender: UIButton) {
-        self.callFBLogin()
+//        self.callFBLogin()
     }
     
     //MARK: Apple Sign-in Btn Action
@@ -197,24 +197,24 @@ class LoginViewController: UIViewController {
     }
     
     func callFBLogin(){
-        SocialLoginHelper.shared.handleLogInWithFacebookButtonPress()
-        SocialLoginHelper.shared.completionHandler = { data in
-            self.fb_id = data.social_id
-            let email = data.email
-            
-            self.dictSocialData = data
-            
-            let params: [String:Any] = [
-                "email"           : email,
-                "device_id":Constants.kAppDelegate.deviceTokenString,
-                "device_type":"ios",
-                "fb_id": self.fb_id,
-                "google_id": "",
-                "country_code":"+91",
-                "referral_code":Constants.kAppDelegate.referralCode
-            ]
-            self.socialLogin(params: params)
-        }
+//        SocialLoginHelper.shared.handleLogInWithFacebookButtonPress()
+//        SocialLoginHelper.shared.completionHandler = { data in
+//            self.fb_id = data.social_id
+//            let email = data.email
+//            
+//            self.dictSocialData = data
+//            
+//            let params: [String:Any] = [
+//                "email"           : email,
+//                "device_id":Constants.kAppDelegate.deviceTokenString,
+//                "device_type":"ios",
+//                "fb_id": self.fb_id,
+//                "google_id": "",
+//                "country_code":"+91",
+//                "referral_code":Constants.kAppDelegate.referralCode
+//            ]
+//            self.socialLogin(params: params)
+//        }
     }
     
     func callAppleLogin(){

@@ -37,7 +37,3 @@ ${PODS_XCFRAMEWORKS_BUILD_DIR}/CashfreeAnalyticsSDK/CashfreeAnalyticsSDK.framewo
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CashfreePG/CashfreePG.framework/CashfreePG
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CashfreePGCoreSDK/CashfreePGCoreSDK.framework/CashfreePGCoreSDK
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CashfreePGUISDK/CashfreePGUISDK.framework/CashfreePGUISDK
-${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework/FBAEMKit
-${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/FBSDKCoreKit
-${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework/FBSDKCoreKit_Basics
-${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework/FBSDKLoginKit

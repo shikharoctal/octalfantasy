@@ -29,8 +29,8 @@ target 'CPFantasy' do
   pod 'MaterialComponents/TextControls+OutlinedTextAreas'
   pod 'MaterialComponents/TextControls+OutlinedTextFields'
   pod 'EasyTipView', '~> 2.1'
-  pod 'FBSDKCoreKit', '~> 15.1'
-  pod 'FBSDKLoginKit', '~> 15.1'
+   # pod 'FBSDKCoreKit', '~> 15.1'
+  #  pod 'FBSDKLoginKit', '~> 15.1'
   pod 'GoogleSignIn'
   pod 'lottie-ios'
 

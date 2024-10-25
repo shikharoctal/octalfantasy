@@ -14,7 +14,7 @@ import UserNotifications
 import FirebaseDynamicLinks
 import DropDown
 import Toast_Swift
-import FBSDKCoreKit
+//import FBSDKCoreKit
 import AppTrackingTransparency
 
 var isSocketConnected = ""
@@ -49,8 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         ToastManager.shared.style.titleColor = UIColor.black
         ToastManager.shared.style.messageColor = UIColor.black
         
-        ApplicationDelegate.shared.application(application,didFinishLaunchingWithOptions: launchOptions)
-        ApplicationDelegate.shared.initializeSDK()
+//        ApplicationDelegate.shared.application(application,didFinishLaunchingWithOptions: launchOptions)
+//        ApplicationDelegate.shared.initializeSDK()
         //self.perform(#selector(requestPermission), with: self, afterDelay: 5.0)
         
         DropDown.startListeningToKeyboard()
@@ -102,8 +102,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
             print(dynamicLink)
             return true
         }
-        
-        return ApplicationDelegate.shared.application(app,open: url,sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+        return true
+//        return ApplicationDelegate.shared.application(app,open: url,sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,annotation: options[UIApplication.OpenURLOptionsKey.annotation])
     }
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity,
